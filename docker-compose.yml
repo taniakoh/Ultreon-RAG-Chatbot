@@ -8,13 +8,20 @@ services:
       - "${BACKEND_PORT}:8000"
     volumes:
       - ./backend/chroma_db:/app/chroma_db
+      - ./sample-documents:/app/sample-documents
     restart: always
 
   frontend:
-    build: .
+    build:
+      context: .
+      args:
+        - BACKEND_URL=http://backend:8000
     ports:
       - "${FRONTEND_PORT}:3000"
     # This automatically uses the root .env for interpolation (the ${} syntax)
     environment:
       - NEXT_PUBLIC_API_URL=http://${DOMAIN_NAME}:${BACKEND_PORT}
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
     restart: always

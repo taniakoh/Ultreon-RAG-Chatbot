@@ -4,9 +4,44 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import PageHeader from "@/components/page-header";
 
+function nameToSlug(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, "-");
+}
+
+const DOCUMENT_LINKS = [
+  { name: "Annual Leave Policy", slug: "annual-leave-policy" },
+  { name: "Expense Claims Procedure", slug: "expense-claims-procedure" },
+  { name: "Client Onboarding Guide", slug: "client-onboarding-guide" },
+  { name: "Office Guidelines", slug: "office-guidelines" },
+  { name: "Data Protection Policy", slug: "data-protection-policy" },
+];
+
+const NON_ANSWER_PATTERNS = [
+  /cannot generate a meaningful response/i,
+  /don['\u2019]t have enough information/i,
+  /not contain enough information/i,
+  /unable to find.*relevant/i,
+  /no relevant information/i,
+  /not covered in the (available |provided )?documents/i,
+  /i don['\u2019]t know/i,
+  /not mentioned in the (available |provided )?(documents|context)/i,
+];
+
+function isNonAnswer(answer: string): boolean {
+  return NON_ANSWER_PATTERNS.some((pattern) => pattern.test(answer));
+}
+
+interface Source {
+  document_name: string;
+  text: string;
+  score?: number;
+}
+
 interface Message {
   role: "user" | "assistant";
   content: string;
+  sources?: Source[];
+  isNonAnswer?: boolean;
 }
 
 export default function Home() {
@@ -44,19 +79,25 @@ export default function Home() {
 
       const data = await res.json();
 
-      let content = data.answer || "Sorry, I couldn't generate a response.";
+      const answer = data.answer || "Sorry, I couldn't generate a response.";
+      const nonAnswer = isNonAnswer(answer);
 
-      if (data.sources && data.sources.length > 0) {
-        content += "\n\n---\n**Sources:**";
-        for (const src of data.sources) {
-          const score = src.score != null ? ` (relevance: ${(src.score * 100).toFixed(0)}%)` : "";
-          content += `\n• **${src.document_name}**${score}\n  "${src.text.slice(0, 200)}${src.text.length > 200 ? "…" : ""}"`;
-        }
-      }
+      const content = nonAnswer
+        ? `I don't have enough information in the available documents to answer that question.`
+        : answer;
+
+      const sources: Source[] =
+        !nonAnswer && data.sources?.length
+          ? data.sources.map((src: Source) => ({
+              document_name: src.document_name,
+              text: src.text,
+              score: src.score,
+            }))
+          : [];
 
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content },
+        { role: "assistant", content, sources, isNonAnswer: nonAnswer },
       ]);
     } catch (err) {
       setMessages((prev) => [
@@ -80,7 +121,7 @@ export default function Home() {
         {hasMessages && (
           <button
             onClick={() => setMessages([])}
-            className="flex items-center gap-1.5 rounded-lg border border-stone-200 bg-white px-3 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:bg-stone-50 hover:text-stone-900 active:scale-[0.97]"
+            className="cursor-pointer flex items-center gap-1.5 rounded-lg border border-stone-200 bg-white px-3 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:bg-stone-50 hover:text-stone-900 active:scale-[0.97]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +172,7 @@ export default function Home() {
                 key={i}
                 className={`animate-fade-in-up flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
-                <div className="flex max-w-[85%] gap-3">
+                <div className={`flex gap-3 ${msg.role === "user" ? "max-w-[85%]" : "min-w-0 max-w-full"}`}>
                   {msg.role === "assistant" && (
                     <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-stone-900">
                       <span className="text-[10px] font-bold text-white">
@@ -140,13 +181,80 @@ export default function Home() {
                     </div>
                   )}
                   <div
-                    className={`rounded-2xl px-4 py-2.5 text-[13px] leading-relaxed whitespace-pre-wrap ${
+                    className={`min-w-0 rounded-2xl px-4 py-2.5 text-[13px] leading-relaxed whitespace-pre-wrap break-words ${
                       msg.role === "user"
                         ? "rounded-br-md bg-stone-900 text-white"
                         : "rounded-bl-md bg-white text-stone-800 shadow-sm ring-1 ring-stone-200/60"
                     }`}
                   >
                     {msg.content}
+                    {msg.isNonAnswer && (
+                      <div className="mt-3 border-t border-stone-200 pt-3">
+                        <p className="mb-2 text-[12px] font-medium text-stone-500">
+                          Browse our documents:
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {DOCUMENT_LINKS.map((doc) => (
+                            <Link
+                              key={doc.slug}
+                              href={`/documents/${doc.slug}`}
+                              className="rounded-full border border-stone-200 bg-stone-50 px-2.5 py-1 text-[11px] font-medium text-stone-600 transition-colors hover:border-stone-300 hover:bg-stone-100 hover:text-stone-900"
+                            >
+                              {doc.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {msg.sources && msg.sources.length > 0 && (
+                      <div className="mt-3 border-t border-stone-200 pt-3">
+                        <p className="mb-2 text-[12px] font-semibold uppercase tracking-wide text-stone-400">
+                          Sources
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          {msg.sources.map((src, j) => (
+                            <div
+                              key={j}
+                              className="rounded-lg border border-stone-200/80 bg-stone-50/80 px-3 py-2"
+                            >
+                              <div className="flex items-center gap-2">
+                                <Link
+                                  href={`/documents/${nameToSlug(src.document_name)}`}
+                                  className="text-[12px] font-semibold text-stone-700 underline decoration-stone-300 underline-offset-2 transition-colors hover:text-stone-900 hover:decoration-stone-500"
+                                >
+                                  {src.document_name}
+                                </Link>
+                                {src.score != null && (() => {
+                                  const pct = src.score * 100;
+                                  const bg = pct >= 85
+                                    ? "color-mix(in oklab, lab(93 -14.86 13.91) 70%, transparent)"
+                                    : pct >= 75
+                                      ? "color-mix(in oklab, lab(94 -2.32 15.86) 70%, transparent)"
+                                      : undefined;
+                                  const textColor = pct >= 85
+                                    ? "text-green-800"
+                                    : pct >= 75
+                                      ? "text-amber-800"
+                                      : "text-stone-500";
+                                  return (
+                                    <span
+                                      className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${textColor} ${!bg ? "bg-stone-200/70" : ""}`}
+                                      style={bg ? { backgroundColor: bg } : undefined}
+                                    >
+                                      {pct.toFixed(0)}% match
+                                    </span>
+                                  );
+                                })()}
+                              </div>
+                              <p className="mt-1 text-[11px] leading-relaxed text-stone-500 italic">
+                                &ldquo;{src.text.slice(0, 200)}
+                                {src.text.length > 200 ? "…" : ""}&rdquo;
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

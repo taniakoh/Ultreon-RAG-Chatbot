@@ -1,0 +1,36 @@
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./.env
+    ports:
+      - "${BACKEND_PORT}:8000"
+    volumes:
+      - ./backend:/app/backend
+      - /app/backend/.venv
+      - ./sample-documents:/app/sample-documents
+      - ./backend/chroma_db:/app/chroma_db
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://${DOMAIN_NAME}:${BACKEND_PORT}
+      - BACKEND_URL=http://backend:8000
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./app:/app/app
+      - ./components:/app/components
+      - ./public:/app/public
+      - ./sample-documents:/app/sample-documents
+      - ./next.config.ts:/app/next.config.ts
+      - ./tailwind.config.ts:/app/tailwind.config.ts:ro
+      - ./postcss.config.mjs:/app/postcss.config.mjs:ro
+    depends_on:
+      - backend
+    restart: unless-stopped

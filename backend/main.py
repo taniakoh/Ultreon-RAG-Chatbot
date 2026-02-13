@@ -1,7 +1,11 @@
 """FastAPI server for the RAG chatbot."""
 
 import json
+import os
+import warnings
 from contextlib import asynccontextmanager
+
+warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 from typing import AsyncGenerator
 
 from fastapi import FastAPI, HTTPException
@@ -27,9 +31,13 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 
 app = FastAPI(title="TanLaw RAG Chatbot", lifespan=lifespan)
 
+_origins = ["http://localhost:3000"]
+if _frontend_url := os.environ.get("FRONTEND_URL"):
+    _origins.append(_frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

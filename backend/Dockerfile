@@ -17,7 +17,8 @@ FROM python:3.13-slim-bookworm
 
 WORKDIR /app
 
-# Copy the venv from builder
+# Copy uv and the venv from builder
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 COPY --from=builder /app/backend/.venv /app/backend/.venv
 
 ENV PATH="/app/backend/.venv/bin:$PATH" \
