@@ -92,7 +92,7 @@ export default function Home() {
                   <button
                     key={q}
                     onClick={() => setInput(q)}
-                    className="rounded-full border border-stone-200 bg-white px-3.5 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:bg-stone-50 hover:text-stone-900 active:scale-[0.97]"
+                    className="rounded-full border border-stone-200 bg-white px-3.5 py-1.5 text-xs font-medium text-stone-600 shadow-sm transition-all hover:border-stone-300 hover:bg-stone-50 hover:text-stone-900 active:scale-[0.97] cursor-pointer"
                   >
                     {q}
                   </button>
@@ -163,12 +163,12 @@ export default function Home() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask about internal policies..."
-              className="w-full rounded-xl border border-stone-300/80 bg-white py-3 pl-4 pr-12 text-sm text-stone-900 shadow-sm outline-none transition-all placeholder:text-stone-400 focus:border-stone-400 focus:ring-2 focus:ring-stone-200"
+              className="w-full rounded-xl border border-stone-300/80 bg-white py-3 pl-4 pr-12 text-sm text-black shadow-sm outline-none transition-all placeholder:text-stone-400 focus:border-stone-400 focus:ring-2 focus:ring-stone-200"
             />
             <button
               type="submit"
               disabled={!input.trim() || loading}
-              className="absolute right-1.5 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg bg-stone-900 text-white transition-all hover:bg-stone-700 disabled:opacity-30 active:scale-[0.92]"
+              className="cursor-pointer absolute right-1.5 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg bg-black text-white transition-all hover:bg-stone-700 disabled:opacity-30 active:scale-[0.92]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
