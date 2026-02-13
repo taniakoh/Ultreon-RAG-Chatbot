@@ -32,6 +32,48 @@ Frontend	http://localhost:3000
 Backend API	http://localhost:8000/docs
 	Interactive Swagger UI for API testing
 
+Gemini said
+Architecture Rationale
+This project implements a Retrieval-Augmented Generation (RAG) pipeline designed for high accuracy and "Honest Uncertainty," specifically tailored for TanLaw Advisory’s internal policy documents.
+
+1. Document Processing & Storage
+To transform static text files into a searchable knowledge base, I followed a multi-stage ingestion pipeline:
+
+Loading: I used LlamaIndex to read the five provided text files from the sample-documents/ directory.
+
+Chunking: Documents are split using a Recursive Character Text Splitter with a chunk size of 800 characters and a 10% overlap.
+
+Why: 800 characters is the "Goldilocks zone" for legal/policy text—large enough to keep a rule and its exception together, but small enough to avoid "Lost in the Middle" syndrome where the LLM gets distracted by irrelevant noise.
+
+Embedding: Each chunk is converted into a vector using the bge-small-en-v1.5 model. This is a lightweight, high-performance local model that ensures the "search" part of the process stays entirely on the local machine.
+
+Vector Store: The resulting embeddings are stored in ChromaDB, a persistent, local vector database that requires zero server overhead.
+
+2. The Retrieval Pipeline
+When a staff member asks a question, the system executes the following flow:
+
+Vectorization: The user's plain-English question is converted into a vector using the same bge-small model.
+
+Semantic Search: The system performs a similarity search in ChromaDB, retrieving the Top 3 most relevant document chunks.
+
+Threshold Filtering: I implemented a Similarity Threshold. If the best-matching chunk doesn't meet a minimum confidence score (0.75), the system triggers the "Honest Uncertainty" mode.
+
+Context Injection: The retrieved chunks are injected into a specialized "System Prompt" for Claude 3.5 Sonnet.
+
+Grounded Generation: The LLM generates an answer based only on the provided context. It is explicitly instructed to cite the document name and provide a "Source Passage" for verification.
+
+3. Database Schema Rationale
+I opted for a Stateless Vector-Only Schema using ChromaDB.
+
+Design: I utilized a single collection in ChromaDB where each entry contains:
+
+id: A unique hash of the content.
+
+embedding: The vector representation.
+
+metadata: Stores the filename (e.g., annual-leave-policy.txt) and the raw text passage.
+
+Reasoning: Since the client requested a "simple search tool" and the documents change only quarterly, a relational database (like PostgreSQL) would have been over-engineering. This schema allows for sub-millisecond search times and zero maintenance.
 
 Tech Stack
 

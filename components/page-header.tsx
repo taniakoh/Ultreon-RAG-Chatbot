@@ -15,9 +15,7 @@ export default function PageHeader({ children }: { children?: React.ReactNode })
     <header className="sticky top-0 z-10 border-b border-stone-200/80 bg-white/70 px-5 py-3 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-stone-900">
-            <span className="text-xs font-bold leading-none text-white">T</span>
-          </div>
+
           <span className="font-heading text-sm font-semibold tracking-tight text-stone-900">
             TanLaw Advisory
           </span>
