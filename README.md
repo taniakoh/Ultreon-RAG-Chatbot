@@ -87,6 +87,8 @@ Vector Store: ChromaDB (Persistent, local, and requires zero server setup).
 
 Backend: FastAPI (Asynchronous and standard for AI tool builds)
 
+Frontend Hosting: Vercel for ease of use.
+
 Key Tradeoffs & Assumptions
 1. ChromaDB vs. PostgreSQL (pgvector)
 The Choice: I stuck with ChromaDB to keep the stack isolated and simple.

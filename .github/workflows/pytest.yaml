@@ -4,6 +4,10 @@ on:
   push:
     branches: [ "main" ] # Only triggers when you push or merge into main
 
+defaults:
+  run:
+    working-directory: backend
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -24,5 +28,5 @@ jobs:
       - name: Run Pytest
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          PYTHONPATH: .
-        run: uv run pytest tests/test_rag.py -v
+          PYTHONPATH: ..
+        run: uv run pytest ../tests/ -v
