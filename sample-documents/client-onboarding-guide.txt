@@ -1,0 +1,411 @@
+TanLaw Advisory — Client Onboarding & Engagement Procedures
+Document Reference: OPS-PRO-002
+Effective Date: 1 January 2025
+Last Revised: 5 December 2024
+Approved By: Sarah Tan, Managing Partner
+Next Review Date: 1 July 2025
+
+================================================================================
+SECTION 1 — PURPOSE AND SCOPE
+================================================================================
+
+1.1 This document sets out the standard procedures for onboarding new clients at TanLaw Advisory Pte Ltd ("the Firm"). A consistent onboarding process ensures regulatory compliance, manages risk, sets clear client expectations, and establishes a professional working relationship from the outset.
+
+1.2 These procedures apply to all new client engagements, regardless of the service type, fee structure, or referring source. They also apply to re-onboarding lapsed clients (see Section 9) and engagements referred from partner firms (see Section 10).
+
+1.3 The assigned consultant (the primary person responsible for the client relationship) is accountable for completing all onboarding steps. The assigned consultant may delegate administrative tasks to a junior team member but remains responsible for verification, compliance, and quality.
+
+1.4 No billable work may commence until the onboarding process is complete, including signed engagement letter and cleared KYC checks. Any exception must be approved in writing by the Managing Partner.
+
+================================================================================
+SECTION 2 — INITIAL ENGAGEMENT AND RESPONSE TIMELINES
+================================================================================
+
+2.1 New Enquiries
+
+When a prospective client makes an enquiry through any channel (phone, email, website contact form, LinkedIn message, walk-in, or referral), the receiving employee must log the enquiry in the Firm's CRM system within 4 business hours.
+
+2.2 Response Timelines
+
+The assigned consultant must respond to the prospective client within the following timeframes:
+
+    Direct referral from existing client:     Within 4 business hours
+    Referral from partner firm:               Within 4 business hours
+    Website or LinkedIn enquiry:              Within 1 business day
+    Walk-in or phone enquiry:                 Same business day (or next business day if received after 4:00 PM)
+
+2.3 Initial Response Content
+
+The initial response should:
+
+    (a) Acknowledge the enquiry and thank the prospective client for their interest;
+    (b) Confirm that their enquiry has been assigned to a named consultant;
+    (c) Provide a brief (2-3 sentence) overview of the Firm's relevant services;
+    (d) Propose a complimentary initial consultation (see Section 3);
+    (e) Include the assigned consultant's direct contact details.
+
+2.4 If the enquiry relates to a service area that the Firm does not cover, the assigned consultant should politely decline and, where appropriate, refer the prospective client to a trusted partner firm. All such referrals must be logged in the CRM system.
+
+================================================================================
+SECTION 3 — INITIAL CONSULTATION
+================================================================================
+
+3.1 Format and Duration
+
+All new prospective clients are offered a complimentary initial consultation of up to 30 minutes. The consultation may be conducted:
+
+    (a) In person at the Firm's office (preferred for corporate clients);
+    (b) Via video call (Zoom or Google Meet — links provided by the consultant);
+    (c) Via phone call (only if the client specifically requests this).
+
+3.2 Consultation Objectives
+
+The initial consultation should cover:
+
+    (a) Understanding the client's needs, objectives, and timeline;
+    (b) Assessing whether the Firm can provide the required services;
+    (c) Providing a preliminary indication of the likely scope, approach, and fee range;
+    (d) Explaining the onboarding process (KYC requirements, engagement letter, timelines);
+    (e) Answering the client's questions about the Firm, the team, and the process.
+
+3.3 Consultation Notes
+
+The assigned consultant must record consultation notes in the CRM system within 1 business day of the consultation. Notes should include: attendees, key topics discussed, client requirements, any concerns raised, proposed next steps, and the estimated engagement value.
+
+3.4 Post-Consultation Follow-Up
+
+Within 2 business days of the initial consultation, the assigned consultant must send a follow-up email to the prospective client that:
+
+    (a) Summarises the key points discussed;
+    (b) Outlines the proposed next steps;
+    (c) Lists the KYC documents required (see Section 4);
+    (d) Provides an estimated timeline for commencing work (assuming KYC and engagement letter are completed promptly).
+
+If the prospective client does not respond within 7 business days of the follow-up email, the consultant should send a single reminder. If there is no response within a further 14 business days, the enquiry may be marked as "Dormant" in the CRM. Dormant enquiries are reviewed quarterly.
+
+================================================================================
+SECTION 4 — KNOW YOUR CLIENT (KYC) REQUIREMENTS
+================================================================================
+
+4.1 Overview
+
+KYC checks are mandatory for all new clients before any engagement may commence. The Firm's KYC procedures are designed to comply with the Legal Profession (Prevention of Money Laundering and Financing of Terrorism) Rules and the Firm's internal risk management standards.
+
+4.2 Individual Clients
+
+The following documents must be collected and verified for individual clients:
+
+    (a) Identification:
+        - Singapore citizens / PRs: Copy of NRIC (front and back)
+        - Foreigners: Copy of passport (photo page and any relevant visa pages)
+        - Employment Pass / S Pass holders: Copy of the pass and passport
+
+    (b) Proof of residential address (dated within 3 months):
+        - Utility bill (electricity, water, gas, or internet)
+        - Bank or credit card statement
+        - Government correspondence (e.g., IRAS notice, CPF statement)
+        - Tenancy agreement (if the client is renting)
+
+    (c) Source of funds declaration (required for engagements where the fee exceeds SGD 10,000 or involves property transactions, trust arrangements, or corporate structuring):
+        - Completed Source of Funds Declaration Form (available on the Firm's document portal)
+        - Supporting documentation as appropriate (e.g., employment letter, bank statements, sale proceeds documentation)
+
+    (d) Signed Client Engagement Letter (see Section 6)
+
+4.3 Corporate Clients
+
+The following documents must be collected and verified for corporate clients:
+
+    (a) ACRA BizFile profile or equivalent company registration document (dated within 3 months of the engagement start date). For overseas-incorporated companies, the equivalent company search from the relevant registry, accompanied by a certified English translation if the original is in another language.
+
+    (b) Identification documents for ALL directors and authorised signatories:
+        - Same requirements as individual clients (Section 4.2(a))
+        - For companies with more than 5 directors, identification is required for at least the 3 most senior directors plus any directors who will be directly involved in the engagement
+
+    (c) Identification of Ultimate Beneficial Owners (UBOs):
+        - Any individual who directly or indirectly owns or controls 25% or more of the shares or voting rights
+        - For complex corporate structures, a corporate structure chart must be provided showing the chain of ownership up to the ultimate natural person(s)
+        - UBO identification documents follow the same requirements as individual clients
+
+    (d) Board Resolution or Director's Resolution authorising the engagement with TanLaw Advisory. The resolution must:
+        - Name the Firm as the appointed service provider
+        - Specify the scope of services
+        - Identify the authorised signatory for the engagement letter and all related correspondence
+
+    (e) Source of funds declaration (same thresholds and requirements as individual clients — see Section 4.2(c)), signed by an authorised signatory
+
+    (f) Signed Client Engagement Letter (see Section 6)
+
+4.4 Non-Profit and Charitable Organisations
+
+    (a) Certificate of registration with the Commissioner of Charities (or equivalent)
+    (b) Constitution or governing instrument
+    (c) Identification of all governing board members (same requirements as individual clients)
+    (d) Board resolution authorising the engagement
+    (e) Signed Client Engagement Letter
+
+4.5 Government and Statutory Bodies
+
+Government agencies and statutory bodies are exempt from standard KYC requirements. However, the assigned consultant must:
+
+    (a) Verify the engagement through official government channels (e.g., GeBIZ for procurement, official government email correspondence);
+    (b) Obtain a signed engagement letter or official purchase order;
+    (c) Log the engagement in the CRM with a note indicating the KYC exemption and the basis for it.
+
+4.6 Document Verification
+
+All KYC documents must be verified by the assigned consultant. Verification involves:
+
+    (a) Checking that identification documents appear genuine and have not expired;
+    (b) Confirming that the name on identification documents matches the name provided by the client;
+    (c) For corporate clients, cross-referencing the ACRA BizFile information with the identification documents provided;
+    (d) Confirming that proof of address is dated within the required timeframe.
+
+Certified true copies are required for physical documents submitted by mail. Documents submitted electronically must be clear, complete, and legible.
+
+4.7 Document Upload and Storage
+
+All KYC documents must be uploaded to the client's profile in the Firm's document management system (DMS) within 2 business days of receipt. Documents must be filed in the "KYC" folder within the client's file. Physical documents must be scanned and uploaded; originals are returned to the client and are not retained.
+
+================================================================================
+SECTION 5 — ANTI-MONEY LAUNDERING (AML) AND SANCTIONS SCREENING
+================================================================================
+
+5.1 All new clients (individuals and entities) must be screened against the following databases before the engagement may proceed:
+
+    (a) The Monetary Authority of Singapore (MAS) sanctions list
+    (b) United Nations Security Council (UNSC) sanctions lists
+    (c) The Firm's internal watchlist (maintained by the Compliance Officer)
+
+5.2 Screening is conducted through the Firm's compliance portal using the client's full legal name, date of birth (individuals), and registration number (entities). The screening result (positive, possible match, or clear) must be recorded in the CRM system.
+
+5.3 Handling Screening Results
+
+    Clear result: Proceed with onboarding.
+
+    Possible match: Escalate to the Compliance Officer within 1 business day. The Compliance Officer will conduct enhanced due diligence and make a determination within 5 business days. The engagement may not proceed until the matter is resolved.
+
+    Positive match (confirmed sanctions hit): The engagement must be immediately terminated. The Compliance Officer will file a Suspicious Transaction Report (STR) with the Suspicious Transaction Reporting Office (STRO) if required by law. The prospective client must not be informed of the STR filing.
+
+5.4 Ongoing Monitoring
+
+Existing clients are re-screened against sanctions lists every 12 months. The Compliance Officer is responsible for scheduling and executing the annual re-screening process. Any changes in screening status are reported to the assigned consultant and the Managing Partner.
+
+================================================================================
+SECTION 6 — ENGAGEMENT LETTER
+================================================================================
+
+6.1 Every client engagement requires a signed engagement letter before work may commence. The engagement letter is a binding agreement between the Firm and the client.
+
+6.2 Mandatory Contents
+
+The engagement letter must clearly state:
+
+    (a) The full legal name of the client and, for corporate clients, the authorised signatory
+    (b) The scope of services to be provided (described in sufficient detail to avoid ambiguity)
+    (c) Services that are explicitly excluded from the scope
+    (d) The fee structure (see Section 7)
+    (e) Payment terms (see Section 7.5)
+    (f) The estimated timeline for delivery (with a caveat that timelines depend on client responsiveness and third-party turnarounds)
+    (g) Confidentiality obligations (mutual)
+    (h) Data protection obligations (reference to the Firm's Data Protection Policy, HR-POL-005)
+    (i) Limitation of liability (standard cap at 3x the total fees for the engagement)
+    (j) Conflict of interest disclosure (if any — see Section 8)
+    (k) Termination provisions (either party may terminate with 14 days' written notice; fees for work completed up to the termination date remain payable)
+    (l) Governing law and dispute resolution (Singapore law; Singapore International Arbitration Centre for disputes exceeding SGD 50,000; Singapore courts for all other disputes)
+
+6.3 Engagement Letter Templates
+
+The Firm maintains engagement letter templates for the following service categories:
+
+    Template A:   Advisory services (general)
+    Template B:   Corporate structuring and compliance
+    Template C:   Employment law advisory
+    Template D:   Dispute resolution and litigation support
+    Template E:   Retainer arrangements
+    Template F:   Ad-hoc / project-based engagements
+
+Templates are available in the Firm's document portal. Consultants must use the appropriate template as the starting point. Any modifications to the standard template must be reviewed and approved by a Senior Consultant or the Managing Partner before being sent to the client.
+
+6.4 The engagement letter must be signed by both parties (the client or their authorised representative, and an authorised signatory of the Firm). Electronic signatures via DocuSign are accepted and preferred for efficiency.
+
+================================================================================
+SECTION 7 — FEE STRUCTURES AND PAYMENT TERMS
+================================================================================
+
+7.1 Fee Structure Options
+
+The Firm offers the following fee structures:
+
+    (a) Fixed Fee: A predetermined total fee for a defined scope of work. Used for engagements with well-defined deliverables and predictable effort.
+
+    (b) Hourly Rate: Fees based on time spent at the applicable hourly rate. Used for engagements where scope may evolve or is difficult to estimate upfront.
+
+        Standard hourly rates (2025):
+            Junior Consultant:      SGD 150 / hour
+            Consultant:             SGD 250 / hour
+            Senior Consultant:      SGD 350 / hour
+            Managing Partner:       SGD 500 / hour
+
+    (c) Retainer: A fixed monthly fee for ongoing advisory services. The retainer covers a specified number of hours per month; excess hours are billed at the applicable hourly rate. Minimum retainer period is 6 months.
+
+    (d) Success Fee: A fee payable upon the successful completion of a defined outcome (e.g., successful resolution of a dispute, completion of a corporate transaction). Success fees must be pre-approved by the Managing Partner and must comply with applicable professional conduct rules.
+
+    (e) Blended / Hybrid: A combination of the above structures (e.g., fixed fee for defined deliverables plus hourly rate for additional work).
+
+7.2 Fee Estimates and Quotations
+
+Before issuing the engagement letter, the assigned consultant must prepare a fee estimate using the Firm's Fee Estimation Worksheet (available on the document portal). The estimate should account for:
+
+    (a) Estimated hours by team member seniority
+    (b) Complexity factors (e.g., multi-jurisdictional issues, tight timelines, large volume of documents)
+    (c) Out-of-pocket disbursements (filing fees, search fees, courier charges, etc.)
+    (d) A contingency buffer of 10-15% for unforeseen complexity
+
+7.3 Fee estimates must be reviewed by the department head before being communicated to the client. For engagements with estimated fees exceeding SGD 20,000, the Managing Partner must also approve the estimate.
+
+7.4 Disbursements
+
+Out-of-pocket disbursements (e.g., government filing fees, search fees, courier charges, notarisation fees) are charged to the client at cost, without markup. Disbursements are itemised separately on invoices. The Firm may request an advance disbursement deposit for engagements expected to incur significant third-party costs.
+
+7.5 Payment Terms
+
+    Standard payment terms:     50% upon signing the engagement letter, 50% upon completion
+    Retainer engagements:       Paid monthly in advance by the 5th of each month
+    Hourly rate engagements:    Invoiced monthly in arrears, payable within 14 days of invoice date
+    Disbursements:              Invoiced monthly with the regular fee invoice
+
+7.6 Overdue Payments
+
+Invoices not paid within 30 days of the due date will incur a late payment charge of 1.5% per month on the outstanding balance. The Firm reserves the right to suspend work on the engagement if payment is overdue by more than 60 days, after providing 14 days' written notice to the client.
+
+================================================================================
+SECTION 8 — CONFLICT OF INTEREST CHECK
+================================================================================
+
+8.1 Before accepting any new client or engagement, the assigned consultant must conduct a conflict of interest check by searching the Firm's CRM and client database for:
+
+    (a) Existing or past relationships with the prospective client;
+    (b) Existing or past relationships with any adverse party identified by the prospective client;
+    (c) Any personal relationships between Firm employees and the prospective client or adverse parties.
+
+8.2 The conflict check must be documented in the CRM system using the Conflict Check Form. The form must be completed and reviewed before the engagement letter is issued.
+
+8.3 If a potential conflict is identified, the matter must be escalated to the Managing Partner for a decision. The Managing Partner may:
+
+    (a) Determine that no actual conflict exists and approve the engagement;
+    (b) Determine that a conflict exists but can be managed with appropriate safeguards (e.g., information barriers, separate teams), and approve the engagement with conditions;
+    (c) Decline the engagement.
+
+8.4 If a conflict is discovered after the engagement has commenced, the assigned consultant must notify the Managing Partner immediately. The Managing Partner will determine the appropriate course of action, which may include withdrawing from the engagement.
+
+================================================================================
+SECTION 9 — RE-ONBOARDING LAPSED CLIENTS
+================================================================================
+
+9.1 A client is considered "lapsed" if there has been no active engagement for 24 months or more.
+
+9.2 Lapsed clients who wish to re-engage the Firm must undergo a refreshed onboarding process, including:
+
+    (a) Updated KYC documentation (identification documents may be re-used if still valid and unchanged; proof of address and ACRA BizFile must be refreshed)
+    (b) A new sanctions screening (Section 5)
+    (c) A new conflict of interest check (Section 8)
+    (d) A new engagement letter for the specific scope of work
+
+9.3 The previous client file in the DMS will be archived and a new file created for the refreshed engagement. The archived file remains accessible for reference but is read-only.
+
+================================================================================
+SECTION 10 — REFERRALS FROM PARTNER FIRMS
+================================================================================
+
+10.1 When a client is referred from a partner firm (e.g., an accounting firm, a foreign law firm, or a financial adviser), the standard onboarding process applies in full. A referral does not exempt the client from KYC or AML screening.
+
+10.2 Referral Fee Arrangements
+
+    (a) The Firm may pay referral fees to partner firms in accordance with pre-agreed referral arrangements. Referral fees must not exceed 15% of the total fees charged for the engagement.
+    (b) Referral fee arrangements must be documented in writing and approved by the Managing Partner.
+    (c) Referral fees are not disclosed to the client unless required by law or professional conduct rules.
+    (d) The Firm does not accept referral fees from other organisations for clients referred to them by the Firm.
+
+10.3 The referring firm's name and the nature of the referral relationship must be recorded in the CRM system.
+
+================================================================================
+SECTION 11 — CLIENT FILE SETUP AND KICK-OFF
+================================================================================
+
+11.1 Once the engagement letter is signed and KYC is cleared, the assigned consultant must complete the following within 2 business days:
+
+    (a) Create a new client folder in the DMS with the following sub-folders:
+        - KYC (upload all KYC documents)
+        - Engagement (upload signed engagement letter)
+        - Correspondence (for emails and letters)
+        - Working Papers (for draft documents and notes)
+        - Deliverables (for final documents provided to the client)
+
+    (b) Log the engagement in the Firm's billing system with the agreed fee structure, estimated fees, and payment milestones
+
+    (c) Assign team members to the engagement in the CRM system
+
+    (d) Schedule a kick-off meeting with the client within 5 business days
+
+11.2 Kick-Off Meeting Agenda
+
+The kick-off meeting should cover:
+
+    (a) Confirmation of the agreed scope and timeline
+    (b) Introduction of all Firm team members involved in the engagement
+    (c) The client's preferred communication channel and frequency (email, phone, WhatsApp Business — personal WhatsApp is not permitted for client communications)
+    (d) Any immediate documents or information needed from the client
+    (e) Key milestones and expected deliverables
+    (f) Escalation contacts (who to reach at the Firm if the assigned consultant is unavailable)
+
+================================================================================
+SECTION 12 — ONGOING COMMUNICATION AND REPORTING
+================================================================================
+
+12.1 Active engagements must receive a written progress update at least once every 2 weeks. Updates may be delivered via email or the client's preferred channel (as agreed at kick-off).
+
+12.2 Progress updates should include:
+    (a) Summary of work completed since the last update
+    (b) Key findings or developments
+    (c) Upcoming milestones and expected timelines
+    (d) Any issues, risks, or dependencies requiring client input or decision
+    (e) Fee status (hours/fees incurred to date vs. estimate, for hourly/retainer engagements)
+
+12.3 Material changes to scope, timeline, or fees must be communicated in writing and acknowledged by the client before proceeding. Scope changes that affect the fee estimate by more than 10% require a formal variation letter signed by both parties.
+
+12.4 All client communications must be logged in the DMS correspondence folder or linked in the CRM system. Verbal communications (phone calls, in-person discussions) that involve decisions or commitments should be followed up with a written confirmation email.
+
+================================================================================
+SECTION 13 — ENGAGEMENT COMPLETION AND HANDOVER
+================================================================================
+
+13.1 Upon completion of an engagement, the assigned consultant must:
+
+    (a) Deliver all final documents and deliverables to the client
+    (b) Issue the final invoice (if applicable)
+    (c) Conduct a brief client satisfaction check (verbal or via the Firm's feedback form)
+    (d) Archive the engagement file in the DMS (move from "Active" to "Completed")
+    (e) Update the CRM to reflect the engagement status as "Completed"
+    (f) Record any follow-up opportunities or future needs identified during the engagement
+
+13.2 Client files for completed engagements are retained in accordance with the Firm's Data Protection Policy (Section 7 — data retention periods): duration of engagement plus 6 years.
+
+================================================================================
+SECTION 14 — CONTACT AND ENQUIRIES
+================================================================================
+
+14.1 For questions about the onboarding process, engagement procedures, or any matter covered by this document, contact the Client Relations team:
+
+    Email:      clients@tanlaw.sg
+    Phone:      +65 6234 5678 (ext. 108)
+    In person:  Client Relations, Level 12, 80 Robinson Road, Singapore 068898
+
+14.2 For compliance-related questions (KYC, AML screening, conflict checks), contact the Compliance Officer:
+
+    Email:      compliance@tanlaw.sg
+    Phone:      +65 6234 5678 (ext. 110)
+
+================================================================================
+END OF DOCUMENT
+================================================================================

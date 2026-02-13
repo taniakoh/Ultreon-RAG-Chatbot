@@ -1,0 +1,294 @@
+TanLaw Advisory — Expense Claims & Reimbursement Policy
+Document Reference: FIN-POL-003
+Effective Date: 1 January 2025
+Last Revised: 20 November 2024
+Approved By: Sarah Tan, Managing Partner
+Next Review Date: 1 July 2025
+
+================================================================================
+SECTION 1 — PURPOSE AND SCOPE
+================================================================================
+
+1.1 This policy governs the reimbursement of business expenses incurred by employees of TanLaw Advisory Pte Ltd ("the Firm") in the course of their duties. It establishes clear guidelines for claimable expenses, approval workflows, submission requirements, and reimbursement timelines.
+
+1.2 This policy applies to all employees (full-time, part-time, and contract), as well as interns on placements of 3 months or more. Interns on placements shorter than 3 months may claim expenses only with prior written approval from their supervising consultant.
+
+1.3 All employees are expected to exercise sound judgment and frugality when incurring business expenses. The Firm reimburses expenses that are reasonable, necessary, and directly related to business activities. Extravagant or unnecessary expenditure will not be reimbursed, regardless of whether it falls within the category limits set out in this policy.
+
+================================================================================
+SECTION 2 — EXPENSE CATEGORIES AND LIMITS
+================================================================================
+
+2.1 Transport — Local
+
+    (a) Taxi and private-hire vehicle (PHV) fares are claimable for travel between the office and client sites, court appearances, government offices, and inter-office travel. Public transport is the preferred mode of travel where practical and timely.
+
+    (b) MRT/bus fares are claimable when travelling for business purposes. Employees who use personal transport cards (e.g., EZ-Link) should submit a separate claim with dates, routes, and business purposes.
+
+    (c) Personal vehicle mileage is reimbursed at $0.60 per kilometre for business travel. Claims must include the origin, destination, distance (based on the shortest practical route via Google Maps), and business purpose. Parking fees incurred during business travel are claimable with receipts. Electronic Road Pricing (ERP) charges incurred during business travel are claimable with a screenshot from the ERP statement.
+
+    (d) Commuting between home and the office is NOT claimable, except in the following circumstances:
+        - Travel to/from the office outside of standard hours (before 7:00 AM or after 10:00 PM) for urgent client work, supported by an email from the supervisor or client;
+        - Travel on weekends or public holidays for pre-approved work.
+
+2.2 Transport — Overseas
+
+    (a) Economy class airfare is the standard for all business travel. Premium economy may be approved for flights exceeding 6 hours at the discretion of the Managing Partner. Business class is only permitted with prior written approval from the Managing Partner for exceptional circumstances (e.g., client requirement, medical necessity).
+
+    (b) Airport transfers at the destination should use public transport or standard taxi services. Limousine services require prior approval.
+
+    (c) Overseas transport claims must be submitted with boarding passes (or e-ticket confirmations), taxi receipts, and a brief itinerary showing the business purpose of each journey.
+
+2.3 Accommodation — Overseas
+
+    (a) Hotel accommodation for business travel is claimable within the following per-night limits (inclusive of taxes and service charges):
+
+        Southeast Asia (excluding Singapore):   SGD 200 per night
+        Greater China (China, HK, Taiwan):      SGD 300 per night
+        Japan / South Korea:                    SGD 350 per night
+        Australia / New Zealand:                SGD 300 per night
+        Europe:                                 SGD 350 per night
+        United States / Canada:                 SGD 400 per night
+        All other regions:                      SGD 250 per night
+
+    (b) Accommodation exceeding the per-night limit may be approved by the Managing Partner on a case-by-case basis, with documented justification (e.g., conference hotel requirement, safety considerations, limited availability).
+
+    (c) Employees who choose to stay with friends or family instead of booking a hotel may claim a flat rate of SGD 50 per night as a hosting allowance, up to a maximum of 7 nights per trip.
+
+    (d) Extended stays beyond 14 nights require approval from the Managing Partner and may be subject to different accommodation arrangements (e.g., serviced apartments at negotiated corporate rates).
+
+2.4 Meals — Client-Facing
+
+    (a) Meals with clients are claimable within the following per-person limits (inclusive of taxes and service charges):
+
+        Breakfast / Tea:           SGD 25 per person
+        Lunch:                     SGD 40 per person
+        Dinner:                    SGD 60 per person
+
+    (b) Alcohol is generally not claimable. An exception applies for client entertainment events that have been pre-approved by a department head, in which case alcohol is claimable up to SGD 30 per person as part of the meal total.
+
+    (c) All client meal claims must include:
+        - The full name(s) of the client(s) present
+        - The client's company name
+        - The business purpose of the meal (e.g., "project kick-off discussion", "quarterly relationship review")
+        - An itemised receipt
+
+    (d) Client meals at the Firm's office (e.g., catered lunch for a workshop) are claimable under the same per-person limits. Catering orders exceeding SGD 200 total require pre-approval from the department head.
+
+2.5 Meals — Internal / Working Late
+
+    (a) Working late meals are claimable when the employee works past 8:00 PM on a weekday, or works on a weekend/public holiday with supervisor approval. The limit is SGD 15 per person per meal.
+
+    (b) Team meals (e.g., project celebrations, team bonding) are NOT claimable under this policy. Team meals are funded through the department's quarterly social budget, which is managed by the department head.
+
+    (c) Internal working lunches (e.g., lunch-and-learn sessions, cross-department planning meetings) may be claimable at up to SGD 20 per person with pre-approval from the organising department head.
+
+    (d) Meals during overseas business travel are claimable at the following per-day limits (covering all meals for the day):
+
+        Southeast Asia (excluding Singapore):   SGD 60 per day
+        Greater China (China, HK, Taiwan):      SGD 80 per day
+        Japan / South Korea:                    SGD 100 per day
+        Australia / New Zealand:                SGD 80 per day
+        Europe:                                 SGD 100 per day
+        United States / Canada:                 SGD 100 per day
+        All other regions:                      SGD 70 per day
+
+    Employees may claim actual expenses up to the daily limit without individual meal receipts, provided they retain at least one receipt per day as evidence of expenditure. Claims above the daily limit require itemised receipts for all meals.
+
+2.6 Office Supplies and Equipment
+
+    (a) Minor office supplies (stationery, printer cartridges, cables, etc.) under SGD 30 may be purchased and claimed without prior approval.
+
+    (b) Office supplies and equipment between SGD 30 and SGD 200 require pre-approval from the employee's direct supervisor.
+
+    (c) Equipment purchases exceeding SGD 200 (e.g., monitors, keyboards, ergonomic chairs for home office use) require pre-approval from the Operations Manager. Items above SGD 500 are classified as capital expenditure and must be approved by the Managing Partner.
+
+    (d) All equipment purchased with Firm funds remains the property of the Firm and must be returned upon termination of employment.
+
+2.7 Software and Subscriptions
+
+    (a) Software subscriptions or tools required for work that are not already provided by the Firm may be claimed with prior approval from the Operations Manager.
+
+    (b) Annual subscriptions must be approved before the subscription is initiated. Monthly subscriptions may be initiated and claimed retrospectively for the first month, but ongoing claims require formal approval.
+
+    (c) AI tool subscriptions (e.g., ChatGPT Plus, GitHub Copilot, Grammarly Business) are claimable up to SGD 30 per month per employee with supervisor approval. Subscriptions exceeding SGD 30 per month require Operations Manager approval.
+
+    (d) The Firm maintains a list of pre-approved software tools on the IT portal. Tools on this list do not require individual approval for claims.
+
+2.8 Professional Development
+
+    (a) Conference registration fees, course fees, seminar fees, and professional examination fees that are directly related to the employee's role are claimable with prior approval from the department head.
+
+    (b) For claims exceeding SGD 500, prior written approval from the Managing Partner is required. A brief written justification (2-3 sentences) explaining how the training benefits the Firm must accompany the request.
+
+    (c) Travel and accommodation for conferences follow the overseas travel limits in Sections 2.2 and 2.3 respectively.
+
+    (d) Professional membership fees (e.g., Law Society of Singapore, ACCA, ISCA) are claimable annually with prior approval from the department head.
+
+    (e) Books, journals, and online learning subscriptions (e.g., O'Reilly, Coursera, LinkedIn Learning) related to the employee's role are claimable up to SGD 200 per calendar year without additional approval.
+
+2.9 Telecommunications
+
+    (a) A monthly mobile allowance of SGD 50 is provided to all full-time employees to cover work-related mobile phone usage. This allowance is paid automatically through payroll and does not require a claim submission.
+
+    (b) Additional mobile charges (e.g., international roaming during business travel) may be claimed with an itemised phone bill and evidence of the business travel dates.
+
+    (c) Home internet costs are NOT claimable, as the Firm considers home internet a personal expense. An exception applies for employees who are required to work from home full-time for an extended period (more than 10 consecutive working days) due to office closures or other Firm-directed circumstances, in which case a flat rate of SGD 30 per month is claimable.
+
+================================================================================
+SECTION 3 — NON-CLAIMABLE EXPENSES
+================================================================================
+
+3.1 The following expenses are not eligible for reimbursement under any circumstances:
+
+    (a) Personal meals, snacks, or beverages (including coffee shop visits)
+    (b) Parking fines, traffic violations, or vehicle towing charges
+    (c) Personal grooming, clothing, or laundry (except for damage caused during a work event)
+    (d) Personal travel insurance (the Firm provides corporate travel insurance for business trips)
+    (e) Gym memberships or fitness classes
+    (f) Gifts for colleagues (e.g., birthday, farewell) — these are funded through the department social budget
+    (g) Any expense for which the employee has been or will be reimbursed by a third party (e.g., a client, a conference organiser)
+    (h) Fines or penalties of any kind
+    (i) Donations or charitable contributions (even if made at a client event)
+    (j) Expenses incurred by family members or friends accompanying the employee on business travel
+
+================================================================================
+SECTION 4 — SUBMISSION PROCESS
+================================================================================
+
+4.1 Submission Method
+
+All expense claims must be submitted through the Firm's Finance portal (accessible at finance.tanlaw.sg). Paper-based claims are no longer accepted as of 1 January 2025.
+
+4.2 Submission Deadline
+
+Claims must be submitted within 30 calendar days of the expense being incurred. For overseas travel, the 30-day period begins on the day of return to Singapore.
+
+    Claims submitted between 31 and 60 days: May be processed with a written explanation for the delay, approved by the department head.
+
+    Claims submitted after 60 days: Will be rejected. No exceptions. Employees are responsible for submitting claims in a timely manner.
+
+4.3 Supporting Documentation
+
+Each claim must include the following:
+
+    (a) A clear description of the business purpose (not just "client meeting" — specify the client name and topic)
+    (b) The date the expense was incurred
+    (c) An itemised receipt or invoice. Credit card statements alone are not sufficient except for online subscriptions where an itemised receipt is not available.
+    (d) For meals: the names and companies of all attendees
+    (e) For transport: the origin, destination, and business purpose
+    (f) For overseas expenses: the exchange rate used (see Section 5)
+
+Photographs of receipts are accepted, provided the receipt is fully legible. Employees are encouraged to photograph receipts immediately, as thermal paper receipts fade over time.
+
+4.4 Missing Receipts
+
+If a receipt is lost or was not provided (e.g., taxi without receipt), the employee may submit a statutory declaration of the expense using the Missing Receipt Declaration form on the Finance portal. Missing receipt declarations are limited to SGD 50 per individual claim and SGD 200 per calendar year per employee. Claims above these thresholds without receipts will be rejected.
+
+================================================================================
+SECTION 5 — FOREIGN CURRENCY AND EXCHANGE RATES
+================================================================================
+
+5.1 Expenses incurred in foreign currencies should be converted to Singapore Dollars at the exchange rate on the date the expense was incurred. Employees should use the exchange rate from XE.com (xe.com/currencyconverter) or their credit card statement as the basis for conversion.
+
+5.2 If the employee obtained foreign currency before the trip, the actual exchange rate paid (as shown on the money changer's receipt or bank statement) may be used instead.
+
+5.3 Exchange rate losses (i.e., the difference between the rate at which currency was obtained and the rate at which it was spent) are borne by the employee and are not claimable.
+
+================================================================================
+SECTION 6 — APPROVAL WORKFLOW
+================================================================================
+
+6.1 Standard Approval
+
+    Claims under SGD 100:                   Approved by direct supervisor
+    Claims between SGD 100 and SGD 500:     Approved by department head
+    Claims above SGD 500:                   Approved by the Managing Partner
+
+6.2 Pre-Approval Requirements
+
+The following expense types require pre-approval BEFORE the expense is incurred:
+
+    (a) All overseas travel (flights, accommodation, per-diem)
+    (b) Equipment purchases above SGD 200
+    (c) Professional development expenses above SGD 500
+    (d) Software subscriptions above SGD 30/month
+    (e) Client entertainment involving alcohol
+
+Pre-approval requests must be submitted via the Finance portal and will be routed to the appropriate approver based on the estimated amount. If actual expenses exceed the pre-approved amount by more than 20%, a revised approval must be obtained.
+
+6.3 Approver Absence
+
+If the designated approver is unavailable for more than 3 working days, claims will be routed to the next level of authority:
+
+    Supervisor unavailable:     Routed to department head
+    Department head unavailable: Routed to the Managing Partner
+    Managing Partner unavailable: Routed to the Deputy Managing Partner (or, if none, held until the Managing Partner's return)
+
+================================================================================
+SECTION 7 — REIMBURSEMENT TIMELINE
+================================================================================
+
+7.1 Approved claims are reimbursed via bank transfer in the next available payroll cycle. Payroll is processed on the 25th of each month (or the last working day before the 25th if it falls on a weekend or public holiday).
+
+7.2 Claims approved on or before the 20th of a month will be included in that month's payroll. Claims approved after the 20th will be included in the following month's payroll.
+
+7.3 For employees who are leaving the Firm (resignation or contract end), all outstanding expense claims must be submitted at least 10 working days before the last day of employment. Claims submitted after the employee's last day will be processed within 30 days via bank transfer to the employee's registered bank account.
+
+================================================================================
+SECTION 8 — CORPORATE CREDIT CARDS
+================================================================================
+
+8.1 Senior Consultants and above may be issued a corporate credit card for business expenses. Corporate credit card holders are subject to the same expense limits and approval requirements as all other employees.
+
+8.2 Corporate credit cards must NOT be used for personal expenses under any circumstances. Misuse of a corporate credit card will result in immediate revocation and may lead to disciplinary action.
+
+8.3 Corporate credit card statements are reviewed monthly by the Finance team. Cardholders must reconcile their statements and submit supporting documentation for all transactions by the 10th of the following month.
+
+8.4 The credit limit on corporate cards is set based on the employee's role:
+
+    Senior Consultant:     SGD 3,000 per month
+    Department Head:       SGD 5,000 per month
+    Managing Partner:      SGD 10,000 per month
+
+Temporary limit increases may be requested for specific projects or trips with Managing Partner approval.
+
+================================================================================
+SECTION 9 — DISPUTES AND APPEALS
+================================================================================
+
+9.1 If an expense claim is rejected, the Finance team will provide a reason for the rejection through the Finance portal. Common reasons include: missing documentation, exceeded category limits, late submission, or non-business purpose.
+
+9.2 Employees may appeal a rejected claim by submitting a written appeal through the Finance portal within 14 days of the rejection notification. Appeals are reviewed by the department head (for claims under SGD 500) or the Managing Partner (for claims above SGD 500).
+
+9.3 The appeal decision is final and will be communicated within 10 working days.
+
+================================================================================
+SECTION 10 — FRAUD AND MISREPRESENTATION
+================================================================================
+
+10.1 Submitting false, inflated, or duplicate expense claims constitutes fraud. The Firm treats expense fraud as gross misconduct.
+
+10.2 If an employee is found to have submitted a fraudulent claim, the Firm will:
+
+    (a) Require full repayment of the fraudulent amount;
+    (b) Initiate disciplinary proceedings, which may result in summary dismissal;
+    (c) Report the matter to the relevant authorities if the amount exceeds SGD 1,000.
+
+10.3 Employees who suspect expense fraud by a colleague should report it confidentially to the Finance Manager or the Managing Partner. Reports may also be made anonymously through the Firm's whistleblowing channel (ethics@tanlaw.sg).
+
+================================================================================
+SECTION 11 — CONTACT AND ENQUIRIES
+================================================================================
+
+11.1 For questions about expense claims, reimbursement timelines, or any matter covered by this policy, contact the Finance team:
+
+    Email:      finance@tanlaw.sg
+    Phone:      +65 6234 5678 (ext. 105)
+    In person:  Finance Office, Level 12, 80 Robinson Road, Singapore 068898
+
+11.2 The Finance team holds a drop-in clinic every Tuesday from 2:00 PM to 4:00 PM for employees with expense-related questions.
+
+================================================================================
+END OF DOCUMENT
+================================================================================

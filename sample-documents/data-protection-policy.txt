@@ -1,0 +1,411 @@
+TanLaw Advisory — Data Protection & Privacy Policy
+Document Reference: HR-POL-005
+Effective Date: 1 January 2025
+Last Revised: 1 December 2024
+Approved By: Sarah Tan, Managing Partner
+Data Protection Officer: Rachel Lim
+Next Review Date: 1 July 2025
+
+================================================================================
+SECTION 1 — PURPOSE AND LEGAL BASIS
+================================================================================
+
+1.1 TanLaw Advisory Pte Ltd ("the Firm") is committed to protecting the personal data of our clients, employees, prospective employees, business partners, and any other individuals whose data we process. This policy sets out the Firm's obligations and the responsibilities of all personnel in handling personal data.
+
+1.2 This policy is designed to ensure compliance with Singapore's Personal Data Protection Act 2012 (PDPA), as amended by the Personal Data Protection (Amendment) Act 2020. The key provisions of the PDPA that govern the Firm's obligations include:
+
+    (a) Consent Obligation (Section 13): Personal data may only be collected, used, or disclosed with the individual's consent, or as permitted under the exceptions in the PDPA.
+    (b) Purpose Limitation Obligation (Section 18): Personal data may only be collected, used, or disclosed for purposes that a reasonable person would consider appropriate in the circumstances.
+    (c) Notification Obligation (Section 20): Individuals must be informed of the purposes for which their data is being collected, used, or disclosed.
+    (d) Access and Correction Obligation (Sections 21-22): Individuals have the right to request access to and correction of their personal data held by the Firm.
+    (e) Accuracy Obligation (Section 23): The Firm must make reasonable efforts to ensure that personal data is accurate and complete.
+    (f) Protection Obligation (Section 24): The Firm must protect personal data in its possession with reasonable security arrangements.
+    (g) Retention Limitation Obligation (Section 25): Personal data must not be retained longer than necessary for the purpose for which it was collected.
+    (h) Transfer Limitation Obligation (Section 26): Personal data may not be transferred outside Singapore unless the receiving country provides a comparable standard of protection.
+    (i) Data Breach Notification Obligation (Section 26D): Notifiable data breaches must be reported to the Personal Data Protection Commission (PDPC) and affected individuals.
+
+1.3 This policy applies to all employees (full-time, part-time, contract), interns, contractors, and third-party service providers who access, handle, or process personal data on behalf of the Firm.
+
+================================================================================
+SECTION 2 — DEFINITIONS
+================================================================================
+
+2.1 Personal Data: Data, whether true or not, about an individual who can be identified from that data, or from that data and other information to which the organisation has or is likely to have access. Examples include: full name, NRIC/FIN/passport number, contact details (phone, email, address), financial information, employment history, and photographs.
+
+2.2 Sensitive Personal Data: While the PDPA does not create a distinct statutory category for "sensitive" data, the Firm treats the following categories as requiring enhanced protection and explicit consent:
+
+    (a) Medical records and health information
+    (b) Religious beliefs or affiliations
+    (c) Political opinions or affiliations
+    (d) Criminal records or ongoing investigations
+    (e) Biometric data (fingerprints, facial recognition data)
+    (f) Sexual orientation
+    (g) Trade union membership
+    (h) Financial information beyond what is necessary for engagement (e.g., full bank statements, investment portfolios)
+
+2.3 Data Classification Levels
+
+The Firm classifies all data into four levels. All employees must handle data in accordance with its classification:
+
+    Level 1 — PUBLIC
+        Definition: Information intended for public distribution.
+        Examples: Published articles, marketing materials, job postings, office address.
+        Handling: No restrictions on distribution. May be shared externally without approval.
+
+    Level 2 — INTERNAL
+        Definition: Information intended for use within the Firm only, but which would not cause significant harm if disclosed.
+        Examples: Internal announcements, team meeting notes, non-sensitive project plans, internal training materials.
+        Handling: May be shared freely within the Firm. External sharing requires supervisor approval. May be stored on Firm systems without encryption.
+
+    Level 3 — CONFIDENTIAL
+        Definition: Information that could cause harm to the Firm, a client, or an individual if disclosed without authorisation.
+        Examples: Client engagement documents, legal opinions, client contact details, financial projections, employee personal data, fee proposals, contract terms.
+        Handling: Access restricted to authorised personnel on a need-to-know basis. Must be stored on Firm-approved systems with access controls. External sharing requires client consent or department head approval. Must be encrypted when transferred electronically. Physical documents must be stored in locked cabinets.
+
+    Level 4 — RESTRICTED
+        Definition: Highly sensitive information where unauthorised disclosure could cause severe harm, legal liability, or regulatory consequences.
+        Examples: NRIC/passport numbers, medical records, criminal records, ongoing litigation strategy, whistleblower reports, merger/acquisition details, AML screening results, source of funds declarations.
+        Handling: Access restricted to specifically named individuals. Must be stored in the Firm's secure document management system with audit logging enabled. External sharing requires Managing Partner approval. Must be encrypted at rest and in transit. Physical documents must be stored in the secure records room (restricted access). Copies must be tracked and accounted for.
+
+================================================================================
+SECTION 3 — DATA COLLECTION
+================================================================================
+
+3.1 Lawful Basis for Collection
+
+Personal data shall only be collected where there is a lawful basis to do so. The Firm's primary lawful bases for collection are:
+
+    (a) Consent: The individual has given clear, informed consent for the specific purpose.
+    (b) Contractual necessity: The data is necessary for the performance of a contract (e.g., an engagement letter) to which the individual is a party.
+    (c) Legal obligation: The Firm is required by law to collect the data (e.g., KYC requirements under anti-money laundering regulations).
+    (d) Legitimate interest: The collection is in the Firm's legitimate business interest and does not override the individual's rights (e.g., improving service delivery based on aggregated, anonymised usage patterns).
+
+3.2 Consent Requirements
+
+    (a) Consent must be obtained before or at the time of collection.
+    (b) The individual must be informed of the purpose(s) for which their data is being collected.
+    (c) Consent must be voluntary — it must not be a condition for providing a service unless the data is necessary for that service.
+    (d) For sensitive personal data (Section 2.2), written consent is required. The Firm's standard consent forms are available in the document templates folder on the DMS.
+    (e) Individuals may withdraw consent at any time by notifying the Firm in writing. The Firm must inform the individual of the likely consequences of withdrawal (e.g., inability to continue providing the service) before processing the withdrawal.
+    (f) Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.
+
+3.3 Data Minimisation
+
+Only personal data that is necessary for the stated purpose should be collected. Employees should not collect data "just in case" or for undefined future purposes. Before collecting personal data, employees should ask: "Is this specific data item necessary for the purpose I have communicated to the individual?"
+
+3.4 Collection from Third Parties
+
+When personal data is received from a third party (e.g., a referral from another firm, data from a public registry), the Firm must:
+
+    (a) Verify that the third party had the authority to disclose the data;
+    (b) Confirm the purpose for which the data was originally collected (and ensure our use is consistent);
+    (c) Notify the individual that we have received their data (unless an exception applies, such as law enforcement requests).
+
+================================================================================
+SECTION 4 — DATA USE AND DISCLOSURE
+================================================================================
+
+4.1 Purpose Limitation
+
+Personal data must only be used for the purpose(s) for which it was collected, or for purposes that the individual would reasonably expect. Using personal data for a new purpose requires fresh consent from the individual, unless an exception under the PDPA applies.
+
+4.2 Internal Access
+
+Access to personal data within the Firm is granted on a need-to-know basis:
+
+    (a) Client personal data: Accessible only to the engagement team members assigned to that client's matter in the CRM system.
+    (b) Employee personal data: Accessible to the HR department, the employee's direct supervisor (limited to role-relevant information), and senior management.
+    (c) Prospective client data: Accessible to the assigned consultant and the Client Relations team.
+
+Employees must not access personal data for clients or matters to which they are not assigned, even out of curiosity. Unauthorised access is logged and may result in disciplinary action.
+
+4.3 External Disclosure
+
+Personal data may be disclosed to external parties only in the following circumstances:
+
+    (a) The individual has given consent;
+    (b) The disclosure is necessary for the purpose for which the data was collected (e.g., disclosing client data to a court or regulatory body as part of an engagement);
+    (c) The disclosure is required by law (e.g., a court order, regulatory investigation);
+    (d) The disclosure is to a data intermediary (third-party processor) acting on behalf of the Firm under a Data Processing Agreement (see Section 9).
+
+All external disclosures of personal data must be logged in the Firm's Disclosure Register (maintained by the DPO).
+
+4.4 Marketing and Business Development
+
+    (a) Client contact data may be used for the Firm's marketing communications (e.g., newsletters, event invitations, service updates) only if the client has given opt-in consent or if we have an existing relationship and the communication relates to similar services.
+    (b) All marketing communications must include an unsubscribe option. Unsubscribe requests must be processed within 10 business days.
+    (c) Client data must never be sold, rented, or shared with third parties for their marketing purposes.
+
+================================================================================
+SECTION 5 — DATA STORAGE AND SECURITY
+================================================================================
+
+5.1 Approved Storage Systems
+
+All personal data must be stored in the Firm's approved systems:
+
+    Digital data:
+        - Firm's Document Management System (DMS) — primary storage for all client and engagement files
+        - Microsoft 365 (OneDrive, SharePoint) — for collaboration and working documents
+        - Firm's CRM and billing system — for client relationship and financial data
+        - Firm-managed email (Outlook) — for correspondence
+
+    Physical data:
+        - Locked filing cabinets in the designated records room (Level 12, Room 12-05)
+        - The secure records room requires access card + PIN entry; access is logged
+
+5.2 Prohibited Storage
+
+Personal data must NOT be stored in the following:
+
+    (a) Personal email accounts (Gmail, Yahoo, Hotmail, etc.)
+    (b) Personal cloud storage (personal Google Drive, iCloud, personal Dropbox)
+    (c) USB drives or external hard drives (unless encrypted and pre-approved by the Operations Manager for a specific purpose, e.g., court submission)
+    (d) Personal devices (phones, tablets, home computers) — data may be accessed via the DMS or OneDrive apps but must not be downloaded or stored locally
+    (e) Messaging applications (WhatsApp, Telegram, Signal) — these may be used for scheduling and non-confidential communication but must not be used to share personal data or confidential documents
+
+5.3 Encryption Requirements
+
+    Data classification Level 3 (Confidential) and Level 4 (Restricted):
+        - Must be encrypted when transferred electronically (email, file sharing, cloud upload)
+        - The Firm provides VeraCrypt for file encryption and secure email (TLS encryption is enabled by default on the Firm's email system)
+        - Password-protected ZIP files are NOT considered adequate encryption
+
+    Data at rest:
+        - Level 4 (Restricted) data must be stored in encrypted containers within the DMS
+        - Level 3 (Confidential) data is protected by the DMS's built-in access controls
+
+5.4 Password and Authentication Standards
+
+    (a) All Firm systems require individual login credentials. Sharing credentials is strictly prohibited.
+    (b) Passwords must meet the following minimum requirements:
+        - Minimum 12 characters
+        - Must include: at least one uppercase letter, one lowercase letter, one number, and one special character
+        - Must not contain the employee's name, username, or common dictionary words
+        - Must not reuse any of the last 10 passwords
+    (c) Passwords must be changed every 90 days. The system will prompt password changes automatically.
+    (d) Two-factor authentication (2FA) is mandatory for:
+        - Email access from outside the office network
+        - VPN access
+        - DMS access from personal devices
+        - CRM and billing system access
+    (e) All employees must use the Firm's password manager (1Password) for storing work credentials. Browser-based password saving must be disabled on Firm devices.
+
+5.5 Physical Security
+
+    (a) Workstations must be locked (Windows: Win+L / Mac: Cmd+Control+Q) when the employee leaves their desk, even briefly
+    (b) Confidential documents must not be left on desks overnight — store in locked cabinets or the secure records room
+    (c) Printer output containing personal data must be collected immediately (see Office Guidelines, Section 6.5)
+    (d) Visitors must be escorted at all times and must not have unsupervised access to workstations or filing areas
+
+================================================================================
+SECTION 6 — DATA TRANSFER
+================================================================================
+
+6.1 Domestic Transfers
+
+Personal data may be transferred between Firm systems (e.g., from the DMS to the CRM) without additional authorisation, provided the transfer is for a purpose consistent with the original collection purpose.
+
+6.2 Cross-Border Transfers
+
+Personal data must not be transferred outside of Singapore unless:
+
+    (a) The recipient is in a country that the PDPC has recognised as providing comparable data protection standards; OR
+    (b) The Firm has entered into a legally binding agreement with the recipient that provides a comparable standard of protection (e.g., standard contractual clauses); OR
+    (c) The individual has given informed consent to the transfer after being advised of the risks; OR
+    (d) The transfer is necessary for the performance of a contract between the individual and the Firm.
+
+6.3 Cross-Border Transfer Assessment
+
+Before any cross-border transfer, the assigned consultant must complete a Cross-Border Transfer Assessment Form (available on the DMS). The assessment must be reviewed and approved by the DPO. The assessment should address:
+
+    (a) The receiving country's data protection framework
+    (b) The nature and sensitivity of the data being transferred
+    (c) The purpose of the transfer
+    (d) The safeguards in place (contractual, technical, organisational)
+    (e) The risks to the individual if the data is compromised
+
+6.4 Approved Cloud Services
+
+The following cloud services have been assessed for cross-border data protection compliance and are approved for use:
+
+    Microsoft 365 (data centre: Southeast Asia region)
+    The Firm's DMS provider (data centre: Singapore)
+    DocuSign (for electronic signatures — data centre: APAC region)
+
+Use of any other cloud service for storing or processing personal data requires prior DPO approval.
+
+================================================================================
+SECTION 7 — DATA RETENTION AND DISPOSAL
+================================================================================
+
+7.1 Retention Periods
+
+Personal data must be retained only for as long as it is needed to fulfil the purpose for which it was collected, or as required by law. The Firm's standard retention periods are:
+
+    Active client files:                        Duration of engagement + 6 years
+    Completed engagement files:                 6 years from completion date
+    Employee records (current employees):       Duration of employment (retained in active HR system)
+    Employee records (former employees):         2 years from termination date
+    Prospective client data (no engagement):    12 months from last contact
+    Job applicant data (unsuccessful):          6 months from rejection notification
+    Financial and billing records:              7 years from the date of the transaction
+    AML/KYC records:                            5 years from the end of the business relationship (or longer if required by regulation)
+    Marketing consent records:                  Duration of consent + 1 year after withdrawal
+    CCTV footage (building management):         30 days (managed by building management, not the Firm)
+
+7.2 Retention Reviews
+
+The DPO conducts an annual retention review (in January each year) to identify data that has exceeded its retention period. Department heads are notified of files due for disposal and must confirm that no legal hold or ongoing business need prevents disposal.
+
+7.3 Secure Disposal
+
+When personal data is no longer needed and has exceeded the retention period:
+
+    Digital data:
+        - Files must be permanently deleted from the DMS (not just moved to the recycle bin)
+        - The DMS maintains an audit trail of deletions
+        - For Level 4 (Restricted) data, the DPO must authorise the deletion and confirm it has been completed
+
+    Physical data:
+        - Paper documents must be shredded using the Firm's cross-cut shredder (located in the records room) or through the Firm's contracted shredding service (monthly collection on the first Monday of each month)
+        - Intact disposal (e.g., placing documents in general waste bins) is strictly prohibited
+        - Storage media (USB drives, hard drives, CDs) must be physically destroyed. Contact the Operations Manager to arrange secure media destruction.
+
+    Email:
+        - Emails containing personal data that are not required for ongoing matters should be deleted from both the mailbox and the deleted items folder
+        - The Firm's email retention policy automatically archives emails older than 2 years; archived emails are subject to the same retention periods as their associated engagement
+
+================================================================================
+SECTION 8 — DATA BREACH MANAGEMENT
+================================================================================
+
+8.1 Definition
+
+A data breach is any event that results in the unauthorised access, collection, use, disclosure, copying, modification, disposal, or loss of personal data. This includes:
+
+    (a) A cyber-attack that compromises Firm systems containing personal data
+    (b) Accidental disclosure (e.g., sending a document to the wrong recipient)
+    (c) Loss or theft of a device containing personal data
+    (d) Unauthorised access by an employee (e.g., accessing a client file they are not assigned to)
+    (e) Physical loss of documents containing personal data
+    (f) Ransomware or malware that affects data availability or integrity
+
+8.2 Breach Severity Levels
+
+The Firm classifies data breaches into three severity levels:
+
+    Level 1 — LOW
+        Definition: Breach involves a small amount of non-sensitive personal data (Level 2 — Internal) and is contained quickly with minimal risk of harm.
+        Example: An internal email containing a colleague's phone number sent to the wrong internal recipient.
+        Response: Log the incident, notify the DPO, implement corrective action. Notification to affected individuals is not required unless the DPO determines otherwise.
+
+    Level 2 — MEDIUM
+        Definition: Breach involves Confidential (Level 3) personal data, affects a moderate number of individuals, or could cause reputational or financial harm.
+        Example: A client file sent to the wrong external email address. A laptop containing client data is stolen but was encrypted.
+        Response: Notify the DPO immediately. DPO assesses whether notification to the PDPC and affected individuals is required. Incident response team convened. Root cause analysis within 14 days.
+
+    Level 3 — HIGH (Notifiable Breach)
+        Definition: Breach involves Restricted (Level 4) data, affects a large number of individuals (500 or more), or is likely to result in significant harm (financial loss, physical harm, humiliation, discrimination).
+        Example: A cyber-attack compromises the CRM database containing NRIC numbers and financial data of all clients. An unencrypted laptop containing medical records is stolen.
+        Response: Notify the DPO immediately. Mandatory notification to the PDPC within 3 calendar days of the Firm becoming aware of the breach being a notifiable breach. Notification to affected individuals as soon as practicable. Full incident response team activated. External forensic investigation if required.
+
+8.3 Employee Breach Reporting Obligations
+
+If any employee suspects or becomes aware of a data breach (including a potential or near-miss incident), they must:
+
+    (a) Immediately notify the DPO at dpo@tanlaw.sg or by phone at +65 6234 5678 (ext. 110)
+    (b) Preserve any evidence related to the breach (do not delete emails, files, or logs)
+    (c) Not attempt to investigate or remediate the breach independently — this may compromise evidence or worsen the breach
+    (d) Not discuss the breach with anyone outside the Firm unless authorised by the DPO or Managing Partner
+    (e) Complete a Data Breach Incident Report form (available on the DMS) within 24 hours of the incident
+
+Failure to report a known or suspected breach promptly is a serious disciplinary matter.
+
+8.4 Breach Response Process
+
+    Step 1 (0-4 hours):    DPO assesses the breach severity, contains the breach where possible, and notifies the Managing Partner
+    Step 2 (4-24 hours):   Incident response team investigates the scope, cause, and impact. Evidence is preserved.
+    Step 3 (24-72 hours):  DPO determines whether notification to the PDPC and affected individuals is required. If the breach is notifiable, the DPO submits the notification within 3 calendar days.
+    Step 4 (1-2 weeks):    Root cause analysis is completed. Corrective actions are identified and implemented.
+    Step 5 (30 days):      Post-incident review report is prepared by the DPO and presented to the Managing Partner. Lessons learned are incorporated into training and policy updates.
+
+================================================================================
+SECTION 9 — THIRD-PARTY DATA PROCESSORS
+================================================================================
+
+9.1 When the Firm engages a third-party service provider who will process personal data on the Firm's behalf (a "data intermediary" under the PDPA), a Data Processing Agreement (DPA) must be in place before any personal data is shared.
+
+9.2 The DPA must include:
+
+    (a) The scope and purpose of data processing
+    (b) The types of personal data being processed
+    (c) Security requirements (at least equivalent to the Firm's own standards)
+    (d) Obligations regarding confidentiality
+    (e) Data breach notification requirements (the processor must notify the Firm within 24 hours of becoming aware of a breach)
+    (f) Data retention and return/deletion obligations upon termination of the agreement
+    (g) The right of the Firm to audit the processor's compliance
+
+9.3 The DPO maintains a register of all third-party processors, including the data processed, the security measures in place, and the DPA renewal dates. The register is reviewed quarterly.
+
+9.4 Third-party processors must be assessed before engagement and annually thereafter. The assessment covers: security certifications (e.g., ISO 27001, SOC 2), data centre locations, access controls, encryption standards, and breach history.
+
+================================================================================
+SECTION 10 — EMPLOYEE RESPONSIBILITIES AND TRAINING
+================================================================================
+
+10.1 All employees are responsible for:
+
+    (a) Handling personal data in accordance with this policy and its data classification level
+    (b) Reporting any suspected data breaches immediately (Section 8.3)
+    (c) Completing mandatory data protection training
+    (d) Locking their workstations when leaving their desks
+    (e) Not sharing login credentials with anyone, including colleagues and IT support
+    (f) Using strong passwords that meet the Firm's requirements (Section 5.4)
+    (g) Not storing personal data on unauthorised systems or personal devices (Section 5.2)
+    (h) Disposing of personal data securely when it is no longer needed (Section 7.3)
+
+10.2 Mandatory Training
+
+All employees must complete the following training:
+
+    (a) Initial training: Within 2 weeks of joining the Firm. Covers the PDPA, this policy, data classification, breach reporting, and practical scenarios.
+    (b) Annual refresher: Completed in January each year. Covers policy updates, new threats, and a refresher on key obligations. Duration: approximately 90 minutes.
+    (c) Role-specific training: Employees in roles with elevated data handling responsibilities (HR, Finance, Client Relations, IT) receive additional training tailored to their specific obligations. Duration: approximately 60 minutes, conducted annually.
+
+Training completion is tracked in the HR system. Employees who do not complete mandatory training within the required timeframe will receive a reminder from HR. Persistent non-completion (more than 30 days overdue) may be raised with the employee's supervisor and factored into performance reviews.
+
+================================================================================
+SECTION 11 — INDIVIDUAL RIGHTS
+================================================================================
+
+11.1 Access Requests
+
+Individuals have the right to request access to their personal data held by the Firm. Access requests must be submitted in writing to dpo@tanlaw.sg. The Firm will respond within 30 days of receiving the request. A reasonable administrative fee may be charged if the request is complex or voluminous.
+
+11.2 Correction Requests
+
+Individuals have the right to request correction of inaccurate or incomplete personal data. Correction requests must be submitted in writing to dpo@tanlaw.sg. The Firm will process corrections within 30 days and notify the individual of the outcome. If the data was disclosed to a third party within the past year, the Firm will send the corrected data to that third party (unless the correction is not material).
+
+11.3 Withdrawal of Consent
+
+Individuals may withdraw consent for the collection, use, or disclosure of their personal data at any time. The withdrawal must be submitted in writing. The Firm will process the withdrawal within 10 business days and inform the individual of the consequences (e.g., inability to continue providing a service). Withdrawal does not affect the lawfulness of processing carried out before the withdrawal.
+
+================================================================================
+SECTION 12 — CONTACT AND ENQUIRIES
+================================================================================
+
+12.1 The Firm's Data Protection Officer is:
+
+    Name:       Rachel Lim
+    Email:      dpo@tanlaw.sg
+    Phone:      +65 6234 5678 (ext. 110)
+    Office:     Level 12, 80 Robinson Road, Singapore 068898
+
+12.2 For data breach emergencies outside office hours, contact the DPO via mobile (number available on the Firm's emergency contacts page on the intranet) or the Managing Partner.
+
+12.3 For complaints about the Firm's handling of personal data, individuals may contact the DPO in the first instance. If the complaint is not resolved to their satisfaction, they may lodge a complaint with the Personal Data Protection Commission (PDPC) at https://www.pdpc.gov.sg.
+
+================================================================================
+END OF DOCUMENT
+================================================================================

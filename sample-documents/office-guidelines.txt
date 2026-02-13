@@ -1,0 +1,387 @@
+TanLaw Advisory — Office Operations & Workplace Guidelines
+Document Reference: OPS-POL-004
+Effective Date: 1 January 2025
+Last Revised: 10 November 2024
+Approved By: Sarah Tan, Managing Partner
+Next Review Date: 1 January 2026
+
+================================================================================
+SECTION 1 — PURPOSE AND SCOPE
+================================================================================
+
+1.1 This document sets out the operational guidelines, workplace policies, and facility usage rules for all employees, contractors, and visitors at TanLaw Advisory Pte Ltd ("the Firm"). It applies to all Firm premises, including the main office at 80 Robinson Road and any temporary or co-working spaces used for Firm activities.
+
+1.2 All employees are expected to comply with these guidelines. Repeated non-compliance may result in a verbal warning (first instance), written warning (second instance), or further disciplinary action in accordance with the Firm's Disciplinary Policy (HR-POL-008).
+
+================================================================================
+SECTION 2 — WORKING HOURS AND ATTENDANCE
+================================================================================
+
+2.1 Standard Working Hours
+
+The Firm's standard working hours are Monday to Friday, 9:00 AM to 6:00 PM, with a one-hour lunch break (typically taken between 12:00 PM and 2:00 PM). The Firm operates on a 44-hour work week in accordance with Singapore's Employment Act.
+
+Employees are expected to be at their workstations and ready to work by the start time. Consistent lateness (arriving more than 15 minutes late more than 3 times in a calendar month without prior arrangement) will be flagged to the employee's supervisor.
+
+2.2 Flexible Working Hours
+
+Employees who have completed their probationary period may request flexible start times between 8:00 AM and 10:00 AM, with the corresponding end time adjusted to complete a standard 8-hour workday (excluding the lunch break). For example:
+
+    Start 8:00 AM  →  End 5:00 PM
+    Start 8:30 AM  →  End 5:30 PM
+    Start 9:00 AM  →  End 6:00 PM (standard)
+    Start 9:30 AM  →  End 6:30 PM
+    Start 10:00 AM →  End 7:00 PM
+
+Flexible start times must be agreed upon with the employee's direct supervisor and must be consistent (i.e., the same start time each day, not varying day-to-day). Changes to the agreed flexible start time require at least 2 weeks' notice to the supervisor.
+
+Probationary employees must work standard hours (9:00 AM to 6:00 PM) unless an exception is granted by the department head for documented personal circumstances (e.g., childcare arrangements, long commute due to relocation).
+
+2.3 Time Recording
+
+Employees are not currently required to clock in or out. However, the Firm reserves the right to introduce time recording measures if attendance issues arise. Employees on hourly-rate client engagements must record their billable hours daily in the Firm's billing system.
+
+2.4 Overtime
+
+The Firm does not operate a formal overtime policy for salaried employees. Employees are expected to manage their workload within standard working hours. Where client deadlines or urgent matters require extended hours, the Firm recognises this through:
+
+    (a) Time-off-in-lieu (TOIL): Employees who work more than 2 hours beyond their scheduled end time or work on weekends/public holidays may claim TOIL at the discretion of their supervisor. TOIL must be taken within 30 days and does not accumulate.
+
+    (b) Working late meal claims: See the Expense Claims Policy (FIN-POL-003), Section 2.5.
+
+    (c) Late-night transport: Employees who work past 10:00 PM may claim taxi/PHV fare home. See the Expense Claims Policy, Section 2.1(d).
+
+Part-time employees and employees covered by Part IV of the Employment Act (earning up to SGD 2,600 per month) are entitled to overtime pay at 1.5x the hourly basic rate for hours worked beyond the standard 44-hour week, in accordance with the Employment Act.
+
+================================================================================
+SECTION 3 — REMOTE WORK POLICY
+================================================================================
+
+3.1 Eligibility
+
+Employees who have completed their probationary period may work remotely up to 2 days per week, subject to the following conditions:
+
+    (a) Prior approval from the employee's direct supervisor
+    (b) Remote work days are agreed upon in advance and logged in the HR portal by 6:00 PM the preceding Friday
+    (c) The employee's role does not require physical presence (e.g., employees who manage physical filing, reception duties, or in-person client appointments may have reduced remote work eligibility)
+    (d) The employee has demonstrated the ability to work independently and meet deadlines during the probation period
+
+3.2 Probation Period Exceptions
+
+Probationary employees are generally expected to work from the office full-time to facilitate training, mentoring, and integration. Exceptions may be granted by the department head for:
+
+    (a) Employees whose role is primarily digital and does not require in-person collaboration
+    (b) Documented personal circumstances (e.g., medical condition, caregiving responsibilities)
+    (c) Office closure due to building maintenance or similar situations
+
+Probationary employees granted remote work exceptions are limited to 1 day per week.
+
+3.3 Remote Work Expectations
+
+Employees working remotely are expected to:
+
+    (a) Be available and responsive on Microsoft Teams during their scheduled working hours
+    (b) Attend all scheduled meetings via video call with cameras on (unless bandwidth issues prevent this, in which case the employee should notify participants at the start of the meeting)
+    (c) Ensure a stable internet connection (minimum recommended: 25 Mbps download / 10 Mbps upload)
+    (d) Work from a quiet, private environment suitable for handling confidential client information — public spaces such as cafes, co-working spaces, and libraries are not permitted for work involving confidential client data
+    (e) Respond to Teams messages and emails within 30 minutes during working hours
+    (f) Be available for ad-hoc in-office attendance with 24 hours' notice if required for client meetings or urgent matters
+
+3.4 Remote Work from Overseas
+
+Working remotely from overseas is not permitted for periods exceeding 5 consecutive working days without prior approval from the Managing Partner. Tax and regulatory implications may apply for extended overseas remote work. Employees planning to work from overseas must submit a request at least 14 days in advance, specifying:
+
+    (a) The country and city
+    (b) The duration
+    (c) The reason
+    (d) Confirmation that they will have secure internet access and an appropriate working environment
+    (e) Acknowledgement that they are responsible for any personal tax obligations arising from the overseas work arrangement
+
+3.5 Revocation
+
+Remote work privileges may be revoked at any time if:
+
+    (a) The employee's performance or responsiveness declines
+    (b) Client or project requirements change
+    (c) The employee breaches the remote work expectations set out in Section 3.3
+    (d) The Firm determines that in-office presence is required for a specific period
+
+Revocation decisions are made by the department head and communicated with at least 5 working days' notice (except for urgent client needs).
+
+================================================================================
+SECTION 4 — OFFICE LAYOUT AND WORKSPACES
+================================================================================
+
+4.1 Assigned Desks
+
+The Firm operates a combination of assigned and hot-desk seating. Consultants, Senior Consultants, and the Managing Partner have assigned desks. Junior team members, interns, and contract employees use hot-desks in the open-plan area.
+
+4.2 Hot-Desking Rules
+
+    (a) Hot-desks are available on a first-come, first-served basis each day
+    (b) Employees must clear their hot-desk at the end of each working day — no personal items may be left overnight
+    (c) Each hot-desk is equipped with a monitor, keyboard, and mouse; employees bring their own laptop
+    (d) A set of 4 lockers is available near the hot-desk area for storing personal items during the day (keys available from the Operations Manager; lockers must be emptied daily)
+
+4.3 Quiet Zones
+
+The office designates the north-east corner (desks N1-N8) as a quiet zone between 9:00 AM and 12:00 PM daily. During quiet zone hours:
+
+    (a) Phone calls must not be taken at the desk — use a meeting room or the phone booth
+    (b) Conversations should be kept to a whisper or relocated
+    (c) Headphones are required for any audio
+
+Outside of quiet zone hours, the area operates as a normal open-plan workspace.
+
+4.4 Phone Booths
+
+Two phone booths are located adjacent to Meeting Room B. Phone booths are for calls of up to 15 minutes and are not bookable — they operate on a walk-in basis. Extended calls should be conducted in a meeting room.
+
+================================================================================
+SECTION 5 — MEETING ROOMS
+================================================================================
+
+5.1 Room Inventory
+
+The Firm has three meeting rooms:
+
+    Room A (capacity: 8 persons)
+        - Equipment: 65-inch display (HDMI and wireless), whiteboard, speakerphone
+        - Best for: Team meetings, internal workshops, small client meetings
+
+    Room B (capacity: 4 persons)
+        - Equipment: 32-inch monitor (HDMI), speakerphone
+        - Best for: Small team discussions, phone/video calls, 1-on-1 meetings
+
+    Room C — The Boardroom (capacity: 14 persons)
+        - Equipment: 75-inch display (HDMI and wireless), ceiling microphone array, PTZ camera for video conferencing, whiteboard, water and refreshments station
+        - Best for: Client presentations, board meetings, firm-wide meetings, large workshops
+        - Restriction: Reserved exclusively for client-facing meetings and firm-wide events during business hours (9 AM - 6 PM). Internal team meetings may book Room C only outside business hours or on weekends, or when Rooms A and B are fully booked AND the meeting involves 6+ participants.
+
+5.2 Booking Procedures
+
+    (a) Meeting rooms are booked through the shared Outlook calendar. Each room has its own calendar resource.
+    (b) Internal meetings: Book at least 2 hours in advance.
+    (c) Client meetings: Book at least 24 hours in advance.
+    (d) Maximum booking duration: 2 hours for Rooms A and B; 3 hours for Room C. Extensions may be made if no subsequent booking exists.
+    (e) Recurring bookings (e.g., weekly team meetings) are permitted for up to 3 months at a time, after which they must be renewed.
+    (f) Rooms not occupied within 15 minutes of the booking start time will be automatically released and made available to other employees.
+
+5.3 Room Etiquette
+
+    (a) End meetings on time — the next group may be waiting
+    (b) Clean the whiteboard after use
+    (c) Remove all personal items, cups, and rubbish
+    (d) Report any equipment issues to the Operations Manager immediately
+    (e) Ensure video conferencing equipment is disconnected and screens are turned off
+
+================================================================================
+SECTION 6 — IT EQUIPMENT AND TECHNOLOGY
+================================================================================
+
+6.1 Issued Equipment
+
+All full-time employees are issued the following upon joining:
+
+    (a) Laptop (either MacBook Air or Lenovo ThinkPad, based on role and preference subject to availability)
+    (b) Laptop charger
+    (c) Wireless mouse and keyboard (for use with hot-desk monitors)
+    (d) Laptop bag or sleeve
+
+Interns and contract employees on engagements of 3 months or more receive the same equipment. Shorter-term contractors must bring their own devices, subject to IT security clearance (see Section 6.4).
+
+6.2 Equipment Care
+
+Employees are responsible for the care and security of issued equipment. Equipment that is damaged due to negligence (e.g., water damage, drops, leaving it in a taxi) may require the employee to contribute to repair or replacement costs at the Managing Partner's discretion.
+
+Lost or stolen equipment must be reported to the Operations Manager AND the IT support team within 4 hours of discovery. The IT team will remotely wipe the device if it cannot be recovered within 24 hours.
+
+6.3 Software
+
+The Firm provides licences for the following software:
+
+    - Microsoft 365 (Outlook, Word, Excel, PowerPoint, Teams, OneDrive)
+    - Adobe Acrobat Pro
+    - The Firm's document management system (DMS)
+    - The Firm's CRM and billing system
+    - Zoom (for external video calls where Teams is not suitable)
+    - 1Password (password manager — mandatory for all employees)
+
+Additional software requests should be submitted to the Operations Manager via the IT portal. Employees must NOT install unlicensed software on Firm-issued devices.
+
+6.4 Bring Your Own Device (BYOD)
+
+Personal devices may be used for work purposes (e.g., reading emails on a personal phone) subject to the following:
+
+    (a) The device must have a screen lock enabled (PIN, biometric, or password)
+    (b) The device must be running a supported operating system with up-to-date security patches
+    (c) The Firm's Mobile Device Management (MDM) profile must be installed if accessing the Firm's email or DMS from a personal device
+    (d) Client documents must not be stored locally on personal devices — access only through the DMS or OneDrive
+
+6.5 Printing and Scanning
+
+    (a) The office has 2 multifunction printers (located near Room A and the pantry). Printing is authenticated via employee access card.
+    (b) The Firm encourages digital-first workflows. Employees should avoid printing unless a physical copy is genuinely required (e.g., for court filings, client signatures on physical documents).
+    (c) All print jobs are logged. The Operations Manager reviews printing volumes quarterly and may follow up with employees with unusually high usage.
+    (d) Confidential documents must be collected from the printer immediately. Uncollected print jobs left for more than 30 minutes will be shredded by the Operations team.
+
+================================================================================
+SECTION 7 — DRESS CODE
+================================================================================
+
+7.1 Business Formal (Client-Facing Days)
+
+Business formal attire is required for all client-facing meetings, court appearances, government meetings, and external events:
+
+    Men:    Collared shirt (long or short sleeve), trousers, closed-toe shoes. Suit jacket or blazer for client meetings, court, and external events.
+    Women:  Professional attire equivalent. Closed-toe shoes for court and government meetings. No flip-flops, casual sandals, or athletic shoes.
+
+7.2 Smart Casual (Non-Client Days)
+
+On days without client-facing engagements, smart casual attire is acceptable:
+
+    Acceptable: Collared shirts, blouses, chinos, dress pants, skirts, smart dresses, loafers, clean sneakers
+    Not acceptable: Shorts, slippers, flip-flops, gym wear, tank tops, ripped jeans, graphic t-shirts with offensive content
+
+7.3 Casual Friday
+
+On Fridays, employees may dress casually (including jeans and t-shirts), provided:
+    (a) There are no scheduled client meetings for the day
+    (b) Attire is clean, neat, and presentable
+    (c) Gym wear, slippers, and beachwear remain not acceptable
+
+If a client meeting is scheduled on a Friday, the employee must dress in business formal for the meeting.
+
+7.4 Religious and Cultural Attire
+
+The Firm respects employees' religious and cultural dress requirements. Religious head coverings, traditional attire, and cultural dress are welcome and do not need to conform to the categories above, provided they are clean and presentable.
+
+================================================================================
+SECTION 8 — KITCHEN AND PANTRY
+================================================================================
+
+8.1 Facilities
+
+The pantry is located on the east side of the office and includes:
+    - Coffee machine (espresso, cappuccino, latte, long black)
+    - Electric kettle
+    - Microwave
+    - Full-size refrigerator
+    - Water dispenser (hot and cold)
+    - Dishwasher
+    - Basic cutlery and crockery (mugs, plates, bowls, utensils)
+
+8.2 Employee Responsibilities
+
+    (a) Clean up after yourself — place used items in the dishwasher, wipe down counters, dispose of food waste in the designated bin
+    (b) Label all personal food items stored in the refrigerator with your name and date
+    (c) The refrigerator is cleared every Friday at 6:00 PM — all unlabelled items and items older than 5 days will be disposed of
+    (d) Do not leave food to heat unattended in the microwave
+    (e) Report equipment issues (coffee machine, microwave, water dispenser, dishwasher) to the Operations Manager via the facilities channel on Teams
+
+8.3 Firm-Provided Provisions
+
+The Firm provides the following at no cost to employees:
+    - Coffee beans, tea bags (assorted), sugar, milk (full cream and oat)
+    - Filtered water (hot and cold)
+    - Snacks (restocked weekly on Mondays — suggestions may be submitted to the Operations Manager)
+    - Fresh fruit (delivered on Mondays and Wednesdays)
+
+================================================================================
+SECTION 9 — VISITORS AND SECURITY
+================================================================================
+
+9.1 Visitor Protocol
+
+    (a) All visitors must register at the building lobby reception and collect a visitor pass before proceeding to the Firm's floor
+    (b) The host employee must meet their visitor at the lift lobby on the Firm's floor
+    (c) Visitors must be escorted by a TanLaw employee at all times while on the Firm's premises
+    (d) Client meetings must be conducted in designated meeting rooms, not at individual workstations or in the open-plan area
+    (e) Visitor passes must be returned to building reception upon departure
+
+9.2 Employee Access
+
+    (a) The office is accessible via employee access cards from 7:00 AM to 10:00 PM on weekdays
+    (b) Weekend and public holiday access requires prior approval from the Operations Manager (submitted via the facilities channel on Teams at least 24 hours in advance)
+    (c) Access cards must be worn visibly during office hours
+    (d) Lost access cards must be reported to the Operations Manager immediately for deactivation. A replacement card costs SGD 20 and is deducted from the next payroll
+    (e) Tailgating (allowing someone to enter using your access card) is a security violation. Each person must use their own card.
+
+9.3 After-Hours Access
+
+Employees working after 10:00 PM on weekdays must notify the Operations Manager and their supervisor by Teams message before 6:00 PM that day. The building security team will be informed. Employees working alone after hours must check in with building security upon arrival and departure.
+
+9.4 Emergency Procedures
+
+    (a) Fire evacuation assembly point: Open plaza in front of 80 Robinson Road (ground level, facing the river)
+    (b) Fire wardens: Sarah Tan (Managing Partner), James Wong (Operations Manager), and one volunteer per department (names posted on the noticeboard near the pantry)
+    (c) Fire drills are conducted twice per year in coordination with building management. All employees must participate.
+    (d) First aid kit location: Pantry cupboard (upper shelf, clearly labelled). Trained first aiders: James Wong, Li Wei (Senior Consultant).
+    (e) In the event of any emergency, call building security (ext. 999 from any office phone) and Singapore emergency services (995 for ambulance/fire, 999 for police) as appropriate.
+
+================================================================================
+SECTION 10 — SUSTAINABILITY AND ENVIRONMENTAL GUIDELINES
+================================================================================
+
+10.1 The Firm is committed to reducing its environmental footprint. Employees are expected to:
+
+    (a) Use digital documents instead of printing wherever possible
+    (b) Use double-sided printing when printing is necessary
+    (c) Switch off monitors, lights, and equipment when leaving for the day
+    (d) Use reusable cups and containers — disposable cups are not provided
+    (e) Sort waste into the designated bins (general waste, recyclables, food waste)
+    (f) Report water leaks, faulty lights, or excessive air-conditioning to the Operations Manager
+
+10.2 The Firm tracks energy consumption and paper usage quarterly. Results are shared at the quarterly firm-wide meeting and targets are set annually.
+
+================================================================================
+SECTION 11 — OFFICE EVENTS AND SOCIAL ACTIVITIES
+================================================================================
+
+11.1 Department Social Budget
+
+Each department receives a quarterly social budget for team activities. The budget is managed by the department head and may be used for team lunches, outings, celebrations, and similar activities. The quarterly budget is SGD 30 per person in the department.
+
+11.2 Firm-Wide Events
+
+The Firm organises the following annual events:
+    - Chinese New Year lunch (January/February)
+    - Mid-year team building activity (June/July)
+    - National Day celebration (August)
+    - Year-end dinner (December)
+
+Attendance at firm-wide events is encouraged but voluntary. Events held during working hours are considered paid time.
+
+11.3 Birthday and Milestone Celebrations
+
+The Firm provides a SGD 50 gift voucher for each employee's birthday and for significant work milestones (1 year, 3 years, 5 years of service). The Operations Manager coordinates monthly birthday celebrations (typically a cake on the last Friday of the month for all that month's birthdays).
+
+================================================================================
+SECTION 12 — NOISE AND WORKSPACE ETIQUETTE
+================================================================================
+
+12.1 The office operates primarily as an open-plan environment. To maintain a productive workspace:
+
+    (a) Keep phone calls brief at your desk, or use a meeting room or phone booth for calls exceeding 5 minutes
+    (b) Use headphones when listening to audio or joining virtual meetings from your desk
+    (c) Do not use speakerphone in the open workspace under any circumstances
+    (d) Respect colleagues' focus time — check if someone is available before approaching (look for headphones or a "do not disturb" indicator)
+    (e) Social conversations should be kept to the pantry area or meeting rooms, not at workstations
+    (f) Personal phone calls should be taken in the phone booth or pantry area
+
+================================================================================
+SECTION 13 — CONTACT AND ENQUIRIES
+================================================================================
+
+13.1 For office operations, facilities, IT equipment, or any matter covered by this document, contact the Operations Manager:
+
+    Name:       James Wong
+    Email:      ops@tanlaw.sg
+    Phone:      +65 6234 5678 (ext. 103)
+    Teams:      @James Wong
+
+13.2 For urgent facilities issues (e.g., water leak, power outage, security concern), contact the Operations Manager directly via phone or Teams. If unavailable, contact building management at +65 6234 0000.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
