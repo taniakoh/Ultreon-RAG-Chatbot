@@ -38,8 +38,7 @@ basic_cases = [
 nuance_cases = [
     ("Can I work from home? What are the rules?", True),
     ("Can a probationary employee take annual leave?", True),
-    pytest.param("What happens if I submit an expense claim 45 days late?", True,
-                 marks=pytest.mark.xfail(reason="LLM evaluator may misjudge relevancy on nuanced time-range questions")),
+    ("What happens if I submit an expense claim 45 days late?", True),
     ("Can I work from a cafe when working remotely?", True),
     ("What is the hotel allowance for a business trip to Japan?", True),
 ]
@@ -68,7 +67,7 @@ def test_basic_questions(question, should_find_answer, query_engine, faithfulnes
     _run_rag_test(question, should_find_answer, query_engine, faithfulness_eval, relevancy_eval)
 
 
-@pytest.mark.parametrize("question, should_find_answer", nuance_cases, ids=[q[:50] for q, _ in nuance_cases])
+@pytest.mark.parametrize("question, should_find_answer", nuance_cases, ids=[c.values[0][:50] if hasattr(c, "values") else c[0][:50] for c in nuance_cases])
 def test_nuance_questions(question, should_find_answer, query_engine, faithfulness_eval, relevancy_eval):
     """Questions requiring nuance — edge cases, exceptions, conditions"""
     _run_rag_test(question, should_find_answer, query_engine, faithfulness_eval, relevancy_eval)

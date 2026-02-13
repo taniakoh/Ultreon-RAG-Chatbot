@@ -96,7 +96,20 @@ When a staff member asks a question:
 4. **Context Injection** — Retrieved chunks are injected into a specialized system prompt for Claude 3.5 Sonnet.
 5. **Grounded Generation** — The LLM generates an answer based only on the provided context, citing the document name and source passage for verification.
 
-### 3. Database Schema
+### 3. CI/CD Pipeline
+
+Automated testing and deployment is handled through four GitHub Actions workflows:
+
+| Workflow | Trigger | What It Does |
+|---|---|---|
+| **RAG Accuracy Tests** | Push to `main` | Installs Python 3.13 + uv, runs the LLM-as-a-judge pytest suite against the live RAG pipeline |
+| **Deploy Backend** | Push to `main` (changes in `backend/`) | Builds the production Docker image, pushes to Google Artifact Registry, and deploys to Cloud Run (asia-southeast1) |
+| **Vercel Production** | Push to `main` | Builds and deploys the Next.js frontend to Vercel production |
+| **Vercel Preview** | Push to non-main branches | Deploys a preview build to Vercel for review before merging |
+
+This ensures every merge to `main` is automatically tested for RAG accuracy and deployed to both the backend (Cloud Run) and frontend (Vercel) without manual intervention.
+
+### 4. Database Schema
 
 A **Stateless Vector-Only Schema** using ChromaDB with a single collection where each entry contains:
 
@@ -156,3 +169,27 @@ Legal/policy documents contain long, nested clauses. A mid-sized fixed chunk wit
 > **Choice:** Pre-loaded ingestion via a dedicated `ingest.py` script.
 
 Documents change quarterly, so a "Static RAG" approach is optimal — indexed once at build time. This makes the app faster and more stable. If documents changed daily, a `/upload` endpoint would be built instead.
+
+
+### Testing: LLM-as-a-Judge with LlamaIndex Evaluators
+
+> **Choice:** LlamaIndex's built-in `FaithfulnessEvaluator` and `RelevancyEvaluator` for automated RAG accuracy testing.
+
+The test suite uses an **LLM-as-a-judge** approach — rather than brittle string matching, a second LLM call evaluates each answer on two dimensions:
+
+- **FaithfulnessEvaluator** — Checks whether the generated answer is grounded in the retrieved source chunks. A failing score indicates hallucination (the model invented information not present in the documents).
+- **RelevancyEvaluator** — Checks whether the answer actually addresses the user's question given the retrieved context. A failing score indicates the response is off-topic or unhelpful.
+
+Tests are organized into four categories across 14 parametrized cases:
+
+| Category | Tests | What It Validates |
+|---|---|---|
+| **Basic** | 4 | Single-document lookups with clear answers |
+| **Nuance** | 5 | Edge cases, exceptions, and conditional rules |
+| **Multi-document** | 3 | Questions spanning multiple policy documents |
+| **Out-of-scope** | 2 | Questions the system should refuse to answer |
+
+For out-of-scope questions, the assertion is inverted — the test passes when the evaluator flags the response as *not* faithful, confirming the system correctly refused rather than hallucinating an answer.
+
+This approach could be extended with more advanced methods (e.g., RAG Triad evaluation, retrieval benchmarking) or additional test cases for broader coverage.
+
