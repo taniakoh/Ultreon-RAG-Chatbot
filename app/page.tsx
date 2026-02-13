@@ -33,18 +33,42 @@ export default function Home() {
     setMessages((prev) => [...prev, { role: "user", content: text }]);
     setLoading(true);
 
-    // TODO: call RAG API route
-    setTimeout(() => {
+    try {
+      const res = await fetch("/api/query", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: text }),
+      });
+
+      if (!res.ok) throw new Error(`Server error: ${res.status}`);
+
+      const data = await res.json();
+
+      let content = data.answer || "Sorry, I couldn't generate a response.";
+
+      if (data.sources && data.sources.length > 0) {
+        content += "\n\n---\n**Sources:**";
+        for (const src of data.sources) {
+          const score = src.score != null ? ` (relevance: ${(src.score * 100).toFixed(0)}%)` : "";
+          content += `\n• **${src.document_name}**${score}\n  "${src.text.slice(0, 200)}${src.text.length > 200 ? "…" : ""}"`;
+        }
+      }
+
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content },
+      ]);
+    } catch (err) {
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content:
-            "This is a placeholder response. RAG pipeline not yet connected.",
+          content: "Sorry, something went wrong.",
         },
       ]);
+    } finally {
       setLoading(false);
-    }, 500);
+    }
   };
 
   const hasMessages = messages.length > 0;

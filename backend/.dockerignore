@@ -1,0 +1,23 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database (Crucial: we mount this via volumes instead)
+chroma_db/
+
+# Local documents used for testing
+sample-documents/
+
+# Environment and Secrets
+.env
+.python-version
+
+# IDE junk
+.vscode/
+.idea/

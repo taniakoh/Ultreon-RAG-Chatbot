@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    # Change this from ./backend/.env to ./.env
+    env_file:
+      - ./.env  
+    ports:
+      - "${BACKEND_PORT}:8000"
+    volumes:
+      - ./backend/chroma_db:/app/chroma_db
+    restart: always
+
+  frontend:
+    build: .
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    # This automatically uses the root .env for interpolation (the ${} syntax)
+    environment:
+      - NEXT_PUBLIC_API_URL=http://${DOMAIN_NAME}:${BACKEND_PORT}
+    restart: always
