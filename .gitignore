@@ -1,1 +1,10 @@
-.env
+CLAUDE.md
+.claude/
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.next/
+out/
+build/
+dist/
