@@ -13,8 +13,17 @@ dependencies = [
     "llama-index-retrievers-bm25>=0.5,<0.6",
     "pydantic-settings>=2.0,<3.0",
     "sentence-transformers>=3.0,<4.0",
+    "torch>=2.0,<3.0",
     "pytest>=9.0.2",
     "python-dotenv==1.1.0",
     "sse-starlette==2.2.1",
     "uvicorn[standard]==0.34.2",
 ]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
