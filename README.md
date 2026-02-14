@@ -82,7 +82,7 @@ This project implements a RAG pipeline designed for high accuracy and "Honest Un
 To transform static text files into a searchable knowledge base, the ingestion pipeline follows these stages:
 
 - **Loading** — LlamaIndex reads the five provided text files from `sample-documents/`.
-- **Chunking** — Documents are split using a Sentence Splitter with a chunk size of 512 characters and 64-character overlap. This keeps policy clauses intact while ensuring precise retrieval.
+- **Chunking** — Documents are split using a Sentence Splitter with a chunk size of 512 characters and 128-character overlap. The higher overlap ensures policy clauses that straddle chunk boundaries are captured in both chunks.
 - **Embedding** — Each chunk is converted into a vector using OpenAI's `text-embedding-3-small` model via OpenRouter, a high-quality cloud embedding model with strong semantic understanding.
 - **Vector Store** — Embeddings are stored in ChromaDB, a persistent local vector database requiring zero server overhead.
 
@@ -91,10 +91,13 @@ To transform static text files into a searchable knowledge base, the ingestion p
 When a staff member asks a question:
 
 1. **Vectorization** — The question is converted into a vector using the same `text-embedding-3-small` model.
-2. **Semantic Search** — A similarity search in ChromaDB retrieves the top 4 most relevant document chunks.
-3. **Threshold Filtering** — If the best-matching chunk doesn't meet a minimum confidence score (0.75), the system triggers "Honest Uncertainty" mode.
-4. **Context Injection** — Retrieved chunks are injected into a specialized system prompt for Claude 3.5 Sonnet.
-5. **Grounded Generation** — The LLM generates an answer based only on the provided context, citing the document name and source passage for verification.
+2. **Hybrid Search** — Two retrieval strategies run in parallel:
+   - **Vector search** — Semantic similarity search finds the top 8 most relevant chunks based on embedding distance.
+   - **BM25 (keyword search)** — A traditional term-frequency search finds chunks containing the exact words from the query.
+3. **Reciprocal Rank Fusion** — Results from both retrievers are merged using `QueryFusionRetriever` with reciprocal rank fusion, combining the strengths of semantic understanding and exact keyword matching.
+4. **Reranking** — A cross-encoder model (`cross-encoder/ms-marco-MiniLM-L-6-v2`) rescores the fused results and selects the top 4 most relevant chunks, significantly improving precision over raw retrieval.
+5. **Context Injection** — Retrieved chunks are injected into a specialized system prompt for Claude 3.5 Sonnet.
+6. **Grounded Generation** — The LLM generates an answer based only on the provided context, citing the document name and source passage for verification.
 
 ### 3. CI/CD Pipeline
 
@@ -130,6 +133,8 @@ Since the documents change only quarterly, a relational database would be over-e
 | Framework    | LlamaIndex                       | Best out-of-the-box performance for document retrieval |
 | LLM          | Claude 3.5 Sonnet (via OpenRouter) | Best at negative constraints required by the feature scope |
 | Embeddings   | `text-embedding-3-small` (via OpenRouter) | High-quality cloud embeddings, unified API through OpenRouter |
+| Retrieval    | Hybrid (Vector + BM25)           | Combines semantic and keyword matching for higher recall |
+| Reranker     | `cross-encoder/ms-marco-MiniLM-L-6-v2` | Cross-encoder reranking for precision after broad retrieval |
 | Vector Store | ChromaDB                         | Persistent, local, zero server setup                   |
 | Backend      | FastAPI                          | Asynchronous, standard for AI tool builds              |
 | Frontend     | Next.js (Vercel)                 | Ease of deployment                                     |
@@ -166,9 +171,15 @@ For simplicity, accuracy, and alignment with the functional requirements describ
 
 ### Chunking Strategy: Fixed-Size vs. Semantic
 
-> **Choice:** Sentence Splitter — 512 characters, 64-character overlap.
+> **Choice:** Sentence Splitter — 512 characters, 128-character overlap.
 
-Smaller chunks with sentence-aware boundaries improve retrieval precision for policy documents. The 64-character overlap ensures context continuity across chunk boundaries. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
+Smaller chunks with sentence-aware boundaries improve retrieval precision for policy documents. The 128-character overlap (~25%) ensures policy clauses that straddle chunk boundaries are fully captured. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
+
+### Hybrid Search (Vector + BM25) vs. Vector-Only Retrieval
+
+> **Choice:** Hybrid search with reciprocal rank fusion and cross-encoder reranking.
+
+Pure vector search can miss results when a query uses exact policy terminology (e.g., "Form HR-003") that doesn't have strong semantic similarity. Adding BM25 keyword search ensures exact term matches are always surfaced. The two result sets are merged via reciprocal rank fusion, then a cross-encoder reranker (`ms-marco-MiniLM-L-6-v2`) rescores the top candidates to select the 4 most relevant chunks. This "retrieve broadly, rerank precisely" pattern significantly improves accuracy — the initial retrieval casts a wide net (top 8 from each retriever), while the reranker ensures only the most relevant chunks reach the LLM. The tradeoff is slightly higher latency (~100ms for reranking), which is negligible compared to the LLM generation time.
 
 ### Static Ingestion vs. Dynamic Uploads
 

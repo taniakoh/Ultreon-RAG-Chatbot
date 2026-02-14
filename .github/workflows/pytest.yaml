@@ -25,6 +25,12 @@ jobs:
       - name: Install Dependencies
         run: uv sync --frozen
 
+      - name: Ingest Documents
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          PYTHONPATH: ${{ github.workspace }}
+        run: uv run python -m backend.ingest
+
       - name: Run Pytest
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
