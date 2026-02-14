@@ -82,7 +82,7 @@ This project implements a RAG pipeline designed for high accuracy and "Honest Un
 To transform static text files into a searchable knowledge base, the ingestion pipeline follows these stages:
 
 - **Loading** — LlamaIndex reads the five provided text files from `sample-documents/`.
-- **Chunking** — Documents are split using a Sentence Splitter with a chunk size of 512 characters and 128-character overlap. The higher overlap ensures policy clauses that straddle chunk boundaries are captured in both chunks.
+- **Chunking** — Documents are split using a Sentence Splitter with a chunk size of 1024 characters and 200-character overlap. The larger chunks keep related policy sections (e.g., entitlement tables with their explanations) together, improving retrieval accuracy. The overlap ensures policy clauses that straddle chunk boundaries are captured in both chunks.
 - **Embedding** — Each chunk is converted into a vector using OpenAI's `text-embedding-3-small` model via OpenRouter, a high-quality cloud embedding model with strong semantic understanding.
 - **Vector Store** — Embeddings are stored in ChromaDB, a persistent local vector database requiring zero server overhead.
 
@@ -171,9 +171,9 @@ For simplicity, accuracy, and alignment with the functional requirements describ
 
 ### Chunking Strategy: Fixed-Size vs. Semantic
 
-> **Choice:** Sentence Splitter — 512 characters, 128-character overlap.
+> **Choice:** Sentence Splitter — 1024 characters, 200-character overlap.
 
-Smaller chunks with sentence-aware boundaries improve retrieval precision for policy documents. The 128-character overlap (~25%) ensures policy clauses that straddle chunk boundaries are fully captured. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
+Larger chunks keep related policy sections together (e.g., a section heading with its entitlement table and explanation), improving both embedding quality and keyword matching. The 200-character overlap (~20%) ensures policy clauses that straddle chunk boundaries are fully captured. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
 
 ### Hybrid Search (Vector + BM25) vs. Vector-Only Retrieval
 
@@ -197,16 +197,16 @@ The test suite uses an **LLM-as-a-judge** approach — rather than brittle strin
 - **FaithfulnessEvaluator** — Checks whether the generated answer is grounded in the retrieved source chunks. A failing score indicates hallucination (the model invented information not present in the documents).
 - **RelevancyEvaluator** — Checks whether the answer actually addresses the user's question given the retrieved context. A failing score indicates the response is off-topic or unhelpful.
 
-Tests are organized into four categories across 14 parametrized cases:
+Tests are organized into four categories across 16 parametrized cases:
 
 | Category | Tests | What It Validates |
 |---|---|---|
-| **Basic** | 4 | Single-document lookups with clear answers |
+| **Basic** | 6 | Single-document lookups with clear answers |
 | **Nuance** | 5 | Edge cases, exceptions, and conditional rules |
 | **Multi-document** | 3 | Questions spanning multiple policy documents |
 | **Out-of-scope** | 2 | Questions the system should refuse to answer |
 
-For out-of-scope questions, the assertion is inverted — the test passes when the evaluator flags the response as *not* faithful, confirming the system correctly refused rather than hallucinating an answer.
+For out-of-scope questions, the test directly checks the response text for refusal phrases (e.g., "I don't have enough information"), confirming the system correctly refused rather than hallucinating an answer.
 
 This approach could be extended with more advanced methods (e.g., RAG Triad evaluation, retrieval benchmarking) or additional test cases for broader coverage.
 
