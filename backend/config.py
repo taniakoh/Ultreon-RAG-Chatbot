@@ -9,7 +9,7 @@ STORE_DIR = Path(__file__).resolve().parent / "vector_store"
 class Settings(BaseSettings):
     OPENROUTER_API_KEY: str
     LLM_MODEL: str = "anthropic/claude-3.5-sonnet"
-    EMBEDDING_MODEL: str = "BAAI/bge-small-en-v1.5"
+    EMBEDDING_MODEL: str = "text-embedding-3-small"
     CHUNK_SIZE: int = 512
     CHUNK_OVERLAP: int = 64
     SIMILARITY_TOP_K: int = 4

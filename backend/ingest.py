@@ -3,14 +3,18 @@
 from llama_index.core import SimpleDirectoryReader, StorageContext, VectorStoreIndex
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.settings import Settings as LlamaSettings
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.embeddings.openai import OpenAIEmbedding
 
 from backend.config import DOCS_DIR, STORE_DIR, settings
 
 
 def ingest() -> None:
     # Configure embedding model
-    embed_model = HuggingFaceEmbedding(model_name=settings.EMBEDDING_MODEL)
+    embed_model = OpenAIEmbedding(
+        model=settings.EMBEDDING_MODEL,
+        api_key=settings.OPENROUTER_API_KEY,
+        api_base="https://openrouter.ai/api/v1",
+    )
     LlamaSettings.embed_model = embed_model
 
     # Load documents

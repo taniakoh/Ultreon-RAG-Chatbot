@@ -28,5 +28,4 @@ jobs:
       - name: Run Pytest
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          PYTHONPATH: ..
-        run: uv run pytest ../tests/ -v
+        run: uv run pytest tests/ -v
