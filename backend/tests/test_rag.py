@@ -99,4 +99,14 @@ def _run_rag_test(question, should_find_answer, query_engine, faithfulness_eval,
         assert rel_result.passing, f"Answer not relevant for: {question}"
     else:
         # Out-of-scope: the bot should refuse / say "I don't know"
-        assert not faith_result.passing, f"Should have refused to answer: {question}"
+        answer = str(response).lower()
+        refusal_phrases = [
+            "don't have enough information",
+            "not covered in",
+            "no relevant information",
+            "i don't know",
+            "not mentioned in the",
+            "unable to find",
+        ]
+        refused = any(phrase in answer for phrase in refusal_phrases)
+        assert refused, f"Should have refused but answered: {question}\nResponse: {response}"

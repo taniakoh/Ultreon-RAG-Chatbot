@@ -1,5 +1,6 @@
 """FastAPI server for the RAG chatbot."""
 
+import asyncio
 import json
 import os
 import warnings
@@ -22,9 +23,17 @@ query_engine: RetrieverQueryEngine | None = None
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     global query_engine
-    print("Building query engine...")
-    query_engine = build_query_engine()
-    print("Query engine ready.")
+
+    # Build engine in a background thread so the server starts listening
+    # on the port immediately (required by Cloud Run health checks).
+    async def _init_engine():
+        global query_engine
+        print("Building query engine...")
+        loop = asyncio.get_running_loop()
+        query_engine = await loop.run_in_executor(None, build_query_engine)
+        print("Query engine ready.")
+
+    asyncio.create_task(_init_engine())
     yield
     query_engine = None
 

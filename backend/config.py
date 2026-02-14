@@ -10,8 +10,8 @@ class Settings(BaseSettings):
     OPENROUTER_API_KEY: str
     LLM_MODEL: str = "anthropic/claude-3.5-sonnet"
     EMBEDDING_MODEL: str = "text-embedding-3-small"
-    CHUNK_SIZE: int = 512
-    CHUNK_OVERLAP: int = 128
+    CHUNK_SIZE: int = 1024
+    CHUNK_OVERLAP: int = 200
     SIMILARITY_TOP_K: int = 8
     USE_RERANKER: bool = True
     RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
