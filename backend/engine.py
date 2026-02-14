@@ -1,9 +1,13 @@
 """Build LlamaIndex query engine over persisted vector store."""
 
-from llama_index.core import PromptTemplate, StorageContext, VectorStoreIndex, load_index_from_storage
+from llama_index.core import PromptTemplate, StorageContext, VectorStoreIndex, get_response_synthesizer, load_index_from_storage
+from llama_index.core.postprocessor import SentenceTransformerRerank
+from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core.retrievers import QueryFusionRetriever, VectorIndexRetriever
 from llama_index.core.settings import Settings as LlamaSettings
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.llms.openrouter import OpenRouter
+from llama_index.retrievers.bm25 import BM25Retriever
 
 from backend.config import STORE_DIR, settings
 
@@ -52,10 +56,47 @@ def build_query_engine():
         embed_model=embed_model,
     )
 
+    # Configure retriever (hybrid or vector-only)
+    if settings.USE_HYBRID_SEARCH:
+        vector_retriever = VectorIndexRetriever(
+            index=index,
+            similarity_top_k=settings.SIMILARITY_TOP_K,
+        )
+        nodes = list(index.docstore.docs.values())
+        bm25_retriever = BM25Retriever.from_defaults(
+            nodes=nodes,
+            similarity_top_k=settings.SIMILARITY_TOP_K,
+        )
+        retriever = QueryFusionRetriever(
+            retrievers=[vector_retriever, bm25_retriever],
+            similarity_top_k=settings.SIMILARITY_TOP_K,
+            num_queries=1,
+            mode="reciprocal_rerank",
+            use_async=False,
+        )
+    else:
+        retriever = VectorIndexRetriever(
+            index=index,
+            similarity_top_k=settings.SIMILARITY_TOP_K,
+        )
+
+    # Configure reranker
+    node_postprocessors = []
+    if settings.USE_RERANKER:
+        reranker = SentenceTransformerRerank(
+            model=settings.RERANKER_MODEL,
+            top_n=settings.RERANK_TOP_N,
+        )
+        node_postprocessors.append(reranker)
+
     # Build query engine
-    query_engine = index.as_query_engine(
-        similarity_top_k=settings.SIMILARITY_TOP_K,
+    response_synthesizer = get_response_synthesizer(
         text_qa_template=QA_PROMPT,
+    )
+    query_engine = RetrieverQueryEngine(
+        retriever=retriever,
+        response_synthesizer=response_synthesizer,
+        node_postprocessors=node_postprocessors,
     )
 
     return query_engine

@@ -68,7 +68,7 @@ docker compose exec backend uv run pytest backend/tests/ -v
 **Locally** (from the `backend/` directory):
 
 ```bash
-uv run pytest ../tests/ -v
+uv run pytest tests/ -v
 ```
 
 ---
@@ -82,16 +82,16 @@ This project implements a RAG pipeline designed for high accuracy and "Honest Un
 To transform static text files into a searchable knowledge base, the ingestion pipeline follows these stages:
 
 - **Loading** — LlamaIndex reads the five provided text files from `sample-documents/`.
-- **Chunking** — Documents are split using a Recursive Character Text Splitter with a chunk size of 800 characters and 10% overlap. This is the "Goldilocks zone" for legal/policy text — large enough to keep a rule and its exception together, but small enough to avoid "Lost in the Middle" syndrome.
-- **Embedding** — Each chunk is converted into a vector using the `bge-small-en-v1.5` model, a lightweight, high-performance local model.
+- **Chunking** — Documents are split using a Sentence Splitter with a chunk size of 512 characters and 64-character overlap. This keeps policy clauses intact while ensuring precise retrieval.
+- **Embedding** — Each chunk is converted into a vector using OpenAI's `text-embedding-3-small` model via OpenRouter, a high-quality cloud embedding model with strong semantic understanding.
 - **Vector Store** — Embeddings are stored in ChromaDB, a persistent local vector database requiring zero server overhead.
 
 ### 2. The Retrieval Pipeline
 
 When a staff member asks a question:
 
-1. **Vectorization** — The question is converted into a vector using the same `bge-small` model.
-2. **Semantic Search** — A similarity search in ChromaDB retrieves the top 3 most relevant document chunks.
+1. **Vectorization** — The question is converted into a vector using the same `text-embedding-3-small` model.
+2. **Semantic Search** — A similarity search in ChromaDB retrieves the top 4 most relevant document chunks.
 3. **Threshold Filtering** — If the best-matching chunk doesn't meet a minimum confidence score (0.75), the system triggers "Honest Uncertainty" mode.
 4. **Context Injection** — Retrieved chunks are injected into a specialized system prompt for Claude 3.5 Sonnet.
 5. **Grounded Generation** — The LLM generates an answer based only on the provided context, citing the document name and source passage for verification.
@@ -129,7 +129,7 @@ Since the documents change only quarterly, a relational database would be over-e
 |--------------|----------------------------------|--------------------------------------------------------|
 | Framework    | LlamaIndex                       | Best out-of-the-box performance for document retrieval |
 | LLM          | Claude 3.5 Sonnet (via OpenRouter) | Best at negative constraints required by the feature scope |
-| Embeddings   | `bge-small-en-v1.5`             | Fast, local, efficient for small English text domains  |
+| Embeddings   | `text-embedding-3-small` (via OpenRouter) | High-quality cloud embeddings, unified API through OpenRouter |
 | Vector Store | ChromaDB                         | Persistent, local, zero server setup                   |
 | Backend      | FastAPI                          | Asynchronous, standard for AI tool builds              |
 | Frontend     | Next.js (Vercel)                 | Ease of deployment                                     |
@@ -152,6 +152,12 @@ If integrating into an existing company portal with PostgreSQL, `pgvector` would
 
 A local model (e.g., Llama 3) would be 100% private but requires expensive on-prem GPUs and typically underperforms on complex "refusal" logic.
 
+### Cloud Embeddings (`text-embedding-3-small`) vs. Local Embeddings (`bge-small-en-v1.5`)
+
+> **Choice:** OpenAI's `text-embedding-3-small` via OpenRouter.
+
+The original `bge-small-en-v1.5` model required downloading ~130MB of model weights on every CI run and cold start, adding latency and making the Docker image heavier. Switching to `text-embedding-3-small` via OpenRouter unifies both LLM and embedding calls through a single API key, simplifies the dependency tree (replacing `llama-index-embeddings-huggingface` with the lighter `llama-index-embeddings-openai`), and produces higher-quality embeddings for improved retrieval accuracy. The tradeoff is a small per-request cost and network dependency, which is acceptable given the system already requires an API call for LLM generation.
+
 ### Stateless Design (No Chat History)
 
 > **Choice:** No multi-turn conversation storage.
@@ -160,9 +166,9 @@ For simplicity, accuracy, and alignment with the functional requirements describ
 
 ### Chunking Strategy: Fixed-Size vs. Semantic
 
-> **Choice:** Recursive Character Text Splitter — 800 characters, 10% overlap.
+> **Choice:** Sentence Splitter — 512 characters, 64-character overlap.
 
-Legal/policy documents contain long, nested clauses. A mid-sized fixed chunk with overlap keeps "definitions" and "rules" together. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
+Smaller chunks with sentence-aware boundaries improve retrieval precision for policy documents. The 64-character overlap ensures context continuity across chunk boundaries. Semantic chunking was avoided since it adds unnecessary processing time for ~120KB of data without significant accuracy gains.
 
 ### Static Ingestion vs. Dynamic Uploads
 

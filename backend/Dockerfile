@@ -30,6 +30,6 @@ COPY . ./backend/
 # sample-documents lives at /app/sample-documents (matches config.py: parent.parent / "sample-documents")
 # Mount or copy them at runtime via docker-compose volume
 
-EXPOSE 8000
+EXPOSE 8080
 
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8080}"]
