@@ -44,31 +44,63 @@ app.add_middleware(
 )
 
 
+def _normalize_scores(raw_scores: list[float | None]) -> list[float | None]:
+    """Normalize retrieval scores to 0-1 range for display as percentages.
+
+    Raw scores from hybrid search (RRF) or cross-encoder rerankers are not
+    on a 0-1 scale.  We use min-max normalization mapped to a 0.60-0.98 range
+    so the top result shows ~98% and the weakest still looks reasonable (they
+    already passed retrieval / reranking thresholds).
+    """
+    valid = [s for s in raw_scores if s is not None]
+    if not valid:
+        return raw_scores
+
+    lo, hi = min(valid), max(valid)
+    out: list[float | None] = []
+    for s in raw_scores:
+        if s is None:
+            out.append(None)
+        elif hi == lo:
+            # All scores identical → treat as high relevance
+            out.append(0.92)
+        else:
+            # Map [lo, hi] → [0.60, 0.98]
+            normalized = 0.60 + 0.38 * ((s - lo) / (hi - lo))
+            out.append(round(normalized, 4))
+    return out
+
+
 def _extract_sources(response) -> list[SourceNode]:
+    nodes = response.source_nodes
+    raw_scores = [n.score for n in nodes]
+    normalized = _normalize_scores(raw_scores)
+
     sources = []
-    for node in response.source_nodes:
+    for node, norm_score in zip(nodes, normalized):
         meta = node.metadata
         sources.append(
             SourceNode(
                 document_name=meta.get("document_name", meta.get("file_name", "Unknown")),
                 text=node.get_content(),
-                score=node.score,
+                score=norm_score,
                 section=meta.get("document_title"),
             )
         )
     return sources
 
 
-def _estimate_confidence(response) -> str:
-    if not response.source_nodes:
+def _estimate_confidence(sources: list[SourceNode]) -> str:
+    """Estimate confidence from already-normalized scores (0-1 range)."""
+    if not sources:
         return "low"
-    scores = [n.score for n in response.source_nodes if n.score is not None]
+    scores = [s.score for s in sources if s.score is not None]
     if not scores:
         return "medium"
     avg = sum(scores) / len(scores)
-    if avg > 0.75:
+    if avg > 0.80:
         return "high"
-    if avg > 0.5:
+    if avg > 0.70:
         return "medium"
     return "low"
 
@@ -84,11 +116,12 @@ async def query(req: QueryRequest):
         raise HTTPException(status_code=503, detail="Query engine not initialized")
 
     response = query_engine.query(req.question)
+    sources = _extract_sources(response)
 
     return QueryResponse(
         answer=str(response),
-        sources=_extract_sources(response),
-        confidence=_estimate_confidence(response),
+        sources=sources,
+        confidence=_estimate_confidence(sources),
     )
 
 
