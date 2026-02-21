@@ -5,7 +5,6 @@
 node_modules
 dist
 backend/.venv
-backend/vector_store
 backend/__pycache__
 *.pyc
 .env
