@@ -1,6 +1,5 @@
 .env
 .venv/
-backend/vector_store/
 __pycache__/
 *.pyc
 CLAUDE.md

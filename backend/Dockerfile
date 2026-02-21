@@ -24,11 +24,8 @@ COPY --from=builder /app/backend/.venv /app/backend/.venv
 ENV PATH="/app/backend/.venv/bin:$PATH" \
     PYTHONPATH=/app
 
-# Copy backend source as a package under /app/backend
+# Copy backend source (includes pre-built vector_store/)
 COPY . ./backend/
-
-# sample-documents lives at /app/sample-documents (matches config.py: parent.parent / "sample-documents")
-# Mount or copy them at runtime via docker-compose volume
 
 EXPOSE 8080
 

@@ -24,3 +24,10 @@ yarn-error.log*
 .gitignore
 .DS_Store
 .claude
+
+# Backend: exclude heavy dirs not needed in the Docker build context
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.deepeval/
+backend/chroma_db/
